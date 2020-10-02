@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

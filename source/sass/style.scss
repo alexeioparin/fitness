@@ -1,3 +1,16 @@
-h1 {
-  color: red;
-}
+@import "normalize.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "blocks/wrapper.scss";
+// @import "blocks/index-header.less";
+// @import "blocks/index-main.less";
+// @import "blocks/intro.less";
+// @import "blocks/button.less";
+// @import "blocks/countryes.less";
+// @import "blocks/offer-overview.less";
+// @import "blocks/price.less";
+// @import "blocks/index-form.less";
+// @import "blocks/main-footer.less";
+// @import "blocks/other.less";
+// @import "blocks/modal.less";

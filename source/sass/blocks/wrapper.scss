@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 0 12.4%;
+  padding: 0 7.1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: inherit;
+}
+
+@media (max-width: $mid-size) {
+  .wrapper {
+    margin: 0 2.7%;
+    padding: 0;
+  }
+}
+
+@media (max-width: $min-size) {
+  .wrapper {
+    width: 93%;
+    margin: 0 3.5%;
+  }
+}
