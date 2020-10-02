@@ -1,16 +1,15 @@
-
-
 .site-navigation__list {
   display: flex;
   list-style: none;
-}
 
-.site-navigation__item {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #F9FBFD;
+  li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #F9FBFD;
+    margin-left: 33px;
+  }
 }
