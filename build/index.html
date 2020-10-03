@@ -10,15 +10,16 @@
 <body class="main-body">
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a href="!#" class="header__logo">
+      <a class="header__logo">
         <img src="img/icons/logo.svg" alt="Лого сайта" width="78" height="38">
       </a>
       <nav class="site-navigation">
+        <img src="img/icons/icon-burger.svg" alt="Меню" width="24" height="12">
         <ul class="site-navigation__list">
-          <li class="site-navigation__item">Преимущества</li>
-          <li class="site-navigation__item">Направления</li>
-          <li class="site-navigation__item">Ближайшие круизы</li>
-          <li class="site-navigation__item">Ближайшие круизы</li>
+          <li class="site-navigation__item"><a href="#!">Преимущества</a></li>
+          <li class="site-navigation__item"><a href="#!">Направления</a></li>
+          <li class="site-navigation__item"><a href="#!">Ближайшие круизы</a></li>
+          <li class="site-navigation__item"><a href="#!">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -32,7 +33,16 @@
           <h2>Путешествие на край Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
         </div>
-        <img src="img/content/top_image_desktop.jpg" alt="Три пингвина" width="560" height="301">
+        <picture>
+          <source type="image/webp" media="(max-width:767px)" srcset="img/content/top_image_mobile.webp 1x, img/content/top_image_mobilex2.webp 2x">
+          <source media="(max-width:767px)" srcset="img/content/top_image_mobile.jpg 1x, img/content/top_image_mobilex2.jpg 2x">
+          <!-- 1х: 560px*301px; 2x: 1120*602px -->
+          <source type="image/webp" media="(max-width:1919px)" srcset="img/content/top_image_tablet.webp 1x, img/content/top_image_tabletx2.webp 2x">
+          <source media="(max-width:1919px)" srcset="img/content/top_image_tablet.jpg 1x, img/content/top_image_tabletx2.jpg 2x">
+          <!-- 1х: 560px*301px; 2x: 1120*602px -->
+          <source type="image/webp" srcset="img/content/top_image_desktop.webp 1x, img/content/top_image_desktopx2.webp 2x">
+          <img src="img/content/top_image_desktop.jpg" alt="Три пингвина" width="560" height="301">
+        </picture>
       </section>
     </div>
     <section class="advantages">
@@ -44,8 +54,7 @@
         </div>
         <div class="advantages__block">
           <h3>Система все включено</h3>
-          <p>Все наши круизы работают
-по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+          <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
         </div>
         <div class="advantages__block">
           <h3>Экскурсионные туры на Zodiac</h3>

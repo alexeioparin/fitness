@@ -9,14 +9,13 @@
 
 @media (max-width: $mid-size) {
   .wrapper {
-    margin: 0 2.7%;
+    margin: 0 45px;
     padding: 0;
   }
 }
 
 @media (max-width: $min-size) {
   .wrapper {
-    width: 93%;
-    margin: 0 3.5%;
+    margin: 0 15px;
   }
 }

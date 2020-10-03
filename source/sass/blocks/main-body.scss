@@ -2,4 +2,30 @@
   background-color: #cccccc;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktop.jpg) no-repeat;
   background-size: auto 1200px, 100%;
+
+  @media (min-resolution: $retina) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktopx2.jpg) no-repeat;
+  }
+}
+
+@media (max-width: $mid-size) {
+  .main-body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tablet.jpg) no-repeat;
+    background-size: auto 1280px, 100%;
+
+    @media (min-resolution: $retina) {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+    }
+  }
+}
+
+@media (max-width: $min-size) {
+  .main-body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-mobile.jpg) no-repeat;
+    background-size: auto 1000px, 100%;
+  }
+
+  @media (min-resolution: $retina) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-mobilex2.jpg) no-repeat;
+  }
 }

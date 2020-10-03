@@ -1,5 +1,5 @@
 .intro {
-  margin-top: 320px;
+  margin-top: 380px;
   margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
@@ -25,8 +25,28 @@
     color: #011C40;
     margin: 0;
   }
+
+  img {
+    margin-left: 30px;
+  }
 }
 
 .intro__wrapper {
   width: 515px;
+}
+
+@media (max-width: $mid-size) {
+  h2 {
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  img {
+    margin-left: 30px;
+  }
 }

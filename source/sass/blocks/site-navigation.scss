@@ -1,8 +1,12 @@
+.site-navigation img {
+  display: none;
+}
+
 .site-navigation__list {
   display: flex;
   list-style: none;
 
-  li {
+  a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -10,6 +14,37 @@
     display: flex;
     align-items: center;
     color: #F9FBFD;
+    text-decoration: none;
     margin-left: 33px;
+  }
+}
+
+@media (max-width: $max-size) {
+  .site-navigation__list a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: $mid-size) {
+
+  .site-navigation__list a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: $min-size) {
+  .site-navigation img {
+    display: inline;
+  }
+
+  .site-navigation__list {
+    display: none;
+
+    a {
+      font-size: 18px;
+      line-height: 22px;
+      color: #011C40;
+    }
   }
 }
