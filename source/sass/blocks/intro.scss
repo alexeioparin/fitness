@@ -36,17 +36,19 @@
 }
 
 @media (max-width: $mid-size) {
-  h2 {
-    font-size: 26px;
-    line-height: 140%;
-  }
+  .intro {
+    h2 {
+      font-size: 26px;
+      line-height: 140%;
+    }
 
-  p {
-    font-size: 16px;
-    line-height: 150%;
-  }
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
 
-  img {
-    margin-left: 30px;
+    img {
+      margin-left: 30px;
+    }
   }
 }
