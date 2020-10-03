@@ -1,3 +1,9 @@
 .booking {
-  
+  background: url(../img/background/bottom_back_desktop.jpg) no-repeat;
+  background-size: 100%;
+  padding: 50px;
+}
+
+.booking__wrapper {
+  flex-wrap: nowrap;
 }

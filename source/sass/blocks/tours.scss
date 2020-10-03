@@ -1,3 +1,32 @@
 .tours {
-  
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  h2 {
+    text-align: center;
+    margin : 0;
+    margin-bottom: 60px;
+  }
+}
+
+.tours__card {
+  position: relative;
+  margin-bottom: 30px;
+
+  h3 {
+    position: absolute;
+    margin: 0;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #F9FBFD;
+  }
+}
+
+
+
+.tours__description {
+  display: none;
 }

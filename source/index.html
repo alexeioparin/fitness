@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js"></script>
 </head>
 <body class="main-body">
   <header class="header">
@@ -33,46 +35,184 @@
           <h2>Путешествие на край Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
         </div>
-        <picture>
+        <!-- <picture>
           <source type="image/webp" media="(max-width:767px)" srcset="img/content/top_image_mobile.webp 1x, img/content/top_image_mobilex2.webp 2x">
-          <source media="(max-width:767px)" srcset="img/content/top_image_mobile.jpg 1x, img/content/top_image_mobilex2.jpg 2x">
-          <!-- 1х: 560px*301px; 2x: 1120*602px -->
           <source type="image/webp" media="(max-width:1919px)" srcset="img/content/top_image_tablet.webp 1x, img/content/top_image_tabletx2.webp 2x">
-          <source media="(max-width:1919px)" srcset="img/content/top_image_tablet.jpg 1x, img/content/top_image_tabletx2.jpg 2x">
-          <!-- 1х: 560px*301px; 2x: 1120*602px -->
-          <source type="image/webp" srcset="img/content/top_image_desktop.webp 1x, img/content/top_image_desktopx2.webp 2x">
-          <img src="img/content/top_image_desktop.jpg" alt="Три пингвина" width="560" height="301">
-        </picture>
+          <source type="image/webp">
+
+        </picture> -->
+        <img src="img/content/top_image_desktop.jpg" alt="Три пингвина" width="560" height="301" srcset="">
       </section>
     </div>
     <section class="advantages">
       <div class="wrapper advantages__wrapper">
         <h2>Преимущества</h2>
-        <div class="advantages__block">
+        <div class="advantages__block advantages__block--ship">
+          <svg width="27" height="32">
+            <use xlink:href="#icon-ship"></use>
+          </svg>
           <h3>Небольшой круизный лайнер</h3>
           <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
         </div>
-        <div class="advantages__block">
+        <div class="advantages__block advantages__block--arrow-yes">
+          <svg width="38" height="32">
+            <use xlink:href="#icon-label_yes"></use>
+          </svg>
           <h3>Система все включено</h3>
           <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
         </div>
-        <div class="advantages__block">
+        <div class="advantages__block advantages__block--zodiac">
+          <svg width="42" height="32">
+            <use xlink:href="#icon-mini_ship"></use>
+          </svg>
           <h3>Экскурсионные туры на Zodiac</h3>
           <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
         </div>
       </div>
     </section>
     <section class="tours">
+      <h2>Ближайшие круизы</h2>
       <div class="wrapper">
-
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Астория”</h3>
+          <img src="img/content/travel_astoria_desktop.jpg" alt="Изображение тур Астория" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Фолклендские острова - Антарктида</p>
+            <strong>Порт отправления</strong>
+            <p>Ушуайя</p>
+            <strong>Продолжительность</strong>
+            <p>11 дней</p>
+            <strong>Цена</strong>
+            <p>от 11500 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Элайн”</h3>
+          <img src="img/content/travel_minion_desktop.jpg" alt="Изображение тур Элайн" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
+            <strong>Порт отправления</strong>
+            <p>Буэнос-Айрес</p>
+            <strong>Продолжительность</strong>
+            <p>20 дней</p>
+            <strong>Цена</strong>
+            <p>от 14500 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Атлантис”</h3>
+          <img src="img/content/travel_atlantis_desktop.jpg" alt="Изображение тур Атлантис" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+            <strong>Порт отправления</strong>
+            <p>Ушуайя</p>
+            <strong>Продолжительность</strong>
+            <p>15 дней</p>
+            <strong>Цена</strong>
+            <p>от 14500 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Одиссей”</h3>
+          <img src="img/content/travel_odissey_desktop.jpg" alt="Изображение тур Одиссей" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Чили - Антарктида</p>
+            <strong>Порт отправления</strong>
+            <p>Пунта-Аренас</p>
+            <strong>Продолжительность</strong>
+            <p>13 дней</p>
+            <strong>Цена</strong>
+            <p>от 9700 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Олимпия”</h3>
+          <img src="img/content/travel_olimpia_desktop.jpg" alt="Изображение тур Олимпия" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
+            <strong>Порт отправления</strong>
+            <p>Ушуайя</p>
+            <strong>Продолжительность</strong>
+            <p>21 день</p>
+            <strong>Цена</strong>
+            <p>от 18600 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Аврора”</h3>
+          <img src="img/content/travel_aurora_desktop.jpg" alt="Изображение тур Аврора" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Антарктида - Чили</p>
+            <strong>Порт отправления</strong>
+            <p>Ушуайя</p>
+            <strong>Продолжительность</strong>
+            <p>14 дней</p>
+            <strong>Цена</strong>
+            <p>от 11700 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Леонор”</h3>
+          <img src="img/content/travel_leonor_desktop.jpg" alt="Изображение тур Леонор" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
+            <strong>Порт отправления</strong>
+            <p>Пунта-Аренас</p>
+            <strong>Продолжительность</strong>
+            <p>17 дней</p>
+            <strong>Цена</strong>
+            <p>от 12500 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
+        <a class="tours__card" href="#!">
+          <h3>Круиз “Минион - 1”</h3>
+          <img src="img/content/travel_minion_desktop.jpg" alt="Изображение тур Минион - 1" width="260" height="386">
+          <div class="tours__description">
+            <strong>Маршрут</strong>
+            <p>Аргентина - Антарктида</p>
+            <strong>Порт отправления</strong>
+            <p>Ушуайя</p>
+            <strong>Продолжительность</strong>
+            <p>11 дней</p>
+            <strong>Цена</strong>
+            <p>от 12300 $</p>
+            <button type="button" name="button" class="button"></button>
+          </div>
+        </a>
       </div>
     </section>
     <section class="booking">
-      <div class="wrapper">
-
+      <div class="wrapper booking__wrapper">
+        <div class="booking__title">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+        </div>
+        <form class="" action="index.html" method="post">
+          <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+          <input type="text" name="" value="">
+          <input type="text" name="" value="">
+          <input type="text" name="" value="">
+          <input type="checkbox" name="" value="">
+          <button type="submit" class="button">Оставить заявку</button>
+        </form>
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Как нас найти</h2>
       <div class="wrapper">
 
       </div>
@@ -88,6 +228,9 @@
       </div>
     </div>
   </footer>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
