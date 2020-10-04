@@ -6,12 +6,19 @@
     text-align: center;
     margin : 0;
     margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    color: #011C40;
   }
 }
 
 .tours__card {
   position: relative;
+  margin: 0 12px;
   margin-bottom: 30px;
+  text-decoration: none;
+
 
   h3 {
     position: absolute;
@@ -23,10 +30,130 @@
     line-height: 150%;
     color: #F9FBFD;
   }
+
+  img {
+    width: 260px;
+    height: 386px;
+    object-fit: cover;
+
+  }
 }
-
-
 
 .tours__description {
   display: none;
+  text-decoration: none;
+  width: 260px;
+  min-height: 386px;
+  box-sizing: border-box;
+  background-color: #011C40;
+  padding: 35px 25px;
+  padding-top: 75px;
+
+  strong {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #F9FBFD;
+  }
+
+  p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #D8D8D9;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    min-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #011C40;
+    cursor: pointer;
+  }
+}
+
+.tours__card:hover {
+  h3 {
+    left: 25px;
+    top: 35px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .tours__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mid-size) {
+  .tours {
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 26px;
+    }
+  }
+
+  .tours__card {
+    h3 {
+      left: 35px;
+    }
+
+    img {
+      width: 309px;
+      height: 386px;
+    }
+  }
+
+  .tours__card:hover {
+    h3 {
+      left: 35px;
+    }
+  }
+
+  .tours__description {
+    width: 309px;
+    padding: 35px;
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: $min-size) {
+  .tours {
+    padding-top: 10px;
+    padding-bottom: 35px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .tours__card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+
+    img {
+      padding: 0 10px;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .tours__description {
+    width: 100%;
+    margin: 0 10px;
+    padding: 25px 35px;
+    padding-top: 75px;
+  }
 }
