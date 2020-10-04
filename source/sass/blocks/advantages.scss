@@ -34,7 +34,7 @@
   background-color: #F9FBFD;
   min-height: 241px;
   padding: 30px;
-  padding-right: 80px;
+  padding-right: 30px;
 
   h3 {
     margin-top: 20px;
@@ -47,13 +47,11 @@
     color: #011C40;
   }
 
-  p {
+  p, div {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
-    display: flex;
-    align-items: center;
     color: #011C40;
   }
 }
@@ -64,6 +62,14 @@
 
 .advantages__block--arrow-yes {
   padding-right: 45px;
+}
+
+.advantages__block--zodiac>p {
+  padding-right: 50px;
+}
+
+.advantages__block--zodiac div {   
+  padding-right: 60px;
 }
 
 @media (max-width: $max-size) {
@@ -104,9 +110,21 @@
     width: 33px;
   }
 
-  .advantages__block--zodiac svg {
-    width: 38px;
+  .advantages__block--zodiac {
+    div, p {
+      padding-right: 0;
+      display: inline;
+    }
+
+    svg {
+      width: 38px;
+    }
   }
+
+  .advantages__block--zodiac>p {
+    padding-right: 0;
+  }
+
 }
 
 @media (max-width: $min-size) {
@@ -146,7 +164,17 @@
     width: 33px;
   }
 
-  .advantages__block--zodiac svg {
-    width: 38px;
+  .advantages__block--zodiac {
+    div {
+      padding-right: 25px;
+      display: block;
+    }
+   svg {
+      width: 38px;
+    }
+  }
+
+  .advantages__block--zodiac>p {
+    padding-right: 0;
   }
 }

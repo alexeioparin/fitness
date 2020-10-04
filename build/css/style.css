@@ -349,6 +349,8 @@ img {
       margin-top: 30px; }
     .intro h2 {
       font-size: 24px; }
+  .intro.menu-opened {
+    margin-top: 86px; }
   .intro__wrapper {
     width: 100%; } }
 
@@ -387,7 +389,7 @@ img {
   background-color: #F9FBFD;
   min-height: 241px;
   padding: 30px;
-  padding-right: 80px; }
+  padding-right: 30px; }
   .advantages__block h3 {
     margin-top: 20px;
     margin-bottom: 15px;
@@ -401,17 +403,11 @@ img {
         -ms-flex-align: center;
             align-items: center;
     color: #011C40; }
-  .advantages__block p {
+  .advantages__block p, .advantages__block div {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     color: #011C40; }
 
 .advantages__block--ship {
@@ -419,6 +415,12 @@ img {
 
 .advantages__block--arrow-yes {
   padding-right: 45px; }
+
+.advantages__block--zodiac > p {
+  padding-right: 50px; }
+
+.advantages__block--zodiac div {
+  padding-right: 60px; }
 
 @media (max-width: 1365px) {
   .advantages {
@@ -445,8 +447,13 @@ img {
     padding-right: 15px; }
   .advantages__block--arrow-yes svg {
     width: 33px; }
+  .advantages__block--zodiac div, .advantages__block--zodiac p {
+    padding-right: 0;
+    display: inline; }
   .advantages__block--zodiac svg {
-    width: 38px; } }
+    width: 38px; }
+  .advantages__block--zodiac > p {
+    padding-right: 0; } }
 
 @media (max-width: 767px) {
   .advantages {
@@ -474,8 +481,13 @@ img {
       width: 175px; }
   .advantages__block--arrow-yes svg {
     width: 33px; }
+  .advantages__block--zodiac div {
+    padding-right: 25px;
+    display: block; }
   .advantages__block--zodiac svg {
-    width: 38px; } }
+    width: 38px; }
+  .advantages__block--zodiac > p {
+    padding-right: 0; } }
 
 .tours {
   padding-top: 90px;
