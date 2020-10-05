@@ -65,7 +65,10 @@
     margin-bottom: 10px;
   }
 
-  button {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-height: 40px;
     font-weight: 600;
@@ -73,6 +76,9 @@
     line-height: 150%;
     color: #011C40;
     cursor: pointer;
+    z-index: 2;
+    background-color: #F9FBFD;
+    text-decoration: none;
   }
 }
 
