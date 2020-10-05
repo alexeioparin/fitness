@@ -27,7 +27,6 @@
   }
 
   img {
-    margin-left: 30px;
     object-fit: cover;
     width: 560px;
     height: 301px;
@@ -39,9 +38,9 @@
 }
 
 @media (max-width: $max-size) {
-  .intro img {
-    width: 50%;
-    height: auto;
+  .intro__wrapper {
+    margin-right: 30px;
+    width: 325px;
   }
 }
 
@@ -60,10 +59,13 @@
     }
 
     img {
-      margin-left: 15px;
       width: 324px;
       height: 264px;
     }
+  }
+
+  .intro__wrapper {
+    margin-right: 20px;
   }
 }
 

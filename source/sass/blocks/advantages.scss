@@ -68,7 +68,7 @@
   padding-right: 50px;
 }
 
-.advantages__block--zodiac div {   
+.advantages__block--zodiac div {
   padding-right: 60px;
 }
 
@@ -99,25 +99,17 @@
     padding: 25px 20px;
 
     svg {
-      height: 26px;
+      transform: scale(0.75);
     }
   }
   .advantages__block--ship {
     padding-right: 15px;
   }
 
-  .advantages__block--arrow-yes svg {
-    width: 33px;
-  }
-
   .advantages__block--zodiac {
     div, p {
       padding-right: 0;
       display: inline;
-    }
-
-    svg {
-      width: 38px;
     }
   }
 
@@ -151,27 +143,14 @@
     width: 100%;
     margin-bottom: 30px;
 
-    svg {
-      height: 26px;
-    }
-
     h3 {
       width: 175px;
     }
   }
 
-  .advantages__block--arrow-yes svg {
-    width: 33px;
-  }
-
-  .advantages__block--zodiac {
-    div {
-      padding-right: 25px;
-      display: block;
-    }
-   svg {
-      width: 38px;
-    }
+  .advantages__block--zodiac div {
+    padding-right: 25px;
+    display: block;
   }
 
   .advantages__block--zodiac>p {

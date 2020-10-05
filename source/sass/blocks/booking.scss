@@ -97,9 +97,11 @@
     display: inline-block;
     width: 18px;
     height: 18px;
+    min-width: 18px;
     margin-right: 5px;
     background-color: #F9FBFD;
     vertical-align: middle;
+
   }
 
   input[type="checkbox"]:checked+label::before {
