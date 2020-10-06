@@ -1,10 +1,12 @@
 .contacts {
   padding: 120px 0;
+  padding-bottom: 117px;
 }
 
 .contacts__wrapper {
   flex-wrap: nowrap;
   position: relative;
+  margin: 0 103px;
 }
 
 .contacts__description {
@@ -12,6 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 15px;
 
   p {
     font-weight: 500;
@@ -19,13 +22,13 @@
     line-height: 150%;
     color: #011C40;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   div {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
@@ -47,9 +50,12 @@
 @media (max-width: $mid-size) {
   .contacts {
     padding: 100px 0;
+    padding-bottom: 95px;
   }
 
   .contacts__wrapper {
+    margin: 0 45px;
+
     img {
       width: 324px;
       height: 335px;
@@ -63,20 +69,26 @@
 
   .contacts__description {
     width: 325px;
+
+    p {
+      margin-bottom: 25px;
+    }
   }
 
-  .contacts__address svg{
+  .contacts__address svg {
     margin-top: 5px;
   }
 }
 
 @media (max-width: $min-size) {
   .contacts {
-    padding: 60px 0;
+    padding: 45px 0;
+    padding-bottom: 62px;
   }
 
   .contacts__wrapper {
     flex-direction: column-reverse;
+    margin: 0 15px;
   }
 
   .contacts__wrapper {
@@ -91,11 +103,13 @@
 
   .contacts__description {
     width: 100%;
-
+    margin-left: 0;
+    margin-bottom: 5px;
 
 
     p {
       padding-right: 10px;
+      margin-bottom: 27px;
     }
   }
 }

@@ -2,6 +2,8 @@
 .site-navigation__list {
   display: flex;
   list-style: none;
+  padding: 0;
+  padding-right: 5px;
 
   a {
     font-style: normal;
@@ -24,9 +26,14 @@
 
 @media (max-width: $mid-size) {
 
-  .site-navigation__list a {
-    font-size: 14px;
-    line-height: 17px;
+  .site-navigation__list {
+    padding-right: 0;
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 23px;
+    }
   }
 }
 

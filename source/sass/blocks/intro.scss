@@ -1,5 +1,5 @@
 .intro {
-  margin-top: 380px;
+  margin-top: 395px;
   margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@
     align-items: center;
     color: #011C40;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   p {
@@ -46,10 +46,13 @@
 
 @media (max-width: $mid-size) {
   .intro {
+    margin-top: 365px;
+    margin-bottom: 93px;
+
     h2 {
       font-size: 26px;
       line-height: 140%;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       width: 210px;
     }
 
@@ -72,7 +75,7 @@
 @media (max-width: $min-size) {
   .intro {
     display: block;
-    margin-top: 250px;
+    margin-top: 235px;
     margin-bottom: 65px;
 
     img {
@@ -81,16 +84,17 @@
       height: auto;
       margin-left: 0;
       margin: 0 auto;
-      margin-top: 30px;
+      margin-top: 33px;
     }
 
     h2 {
       font-size: 24px;
+      width: 70%;
     }
   }
 
   .intro.menu-opened {
-    margin-top: 86px;
+    margin-top: 84px;
   }
 
   .intro__wrapper {

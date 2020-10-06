@@ -2,13 +2,14 @@
   background-color: #ffffff;
   background: url(../img/background/middle_back_desktop.png) no-repeat;
   background-size: 100%;
-  padding-top: 100px;
+  padding-top: 105px;
   padding-bottom: 120px;
 }
 
 @media (min-resolution: $retina) {
   .advantages {
     background: url(../img/background/middle_back_desktopx2.png) no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -35,10 +36,11 @@
   min-height: 241px;
   padding: 30px;
   padding-right: 30px;
+  padding-bottom: 25px;
 
   h3 {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 17px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -51,7 +53,7 @@
     margin: 0;
     font-weight: normal;
     font-size: 14px;
-    line-height: 140%;
+    line-height: 145%;
     color: #011C40;
   }
 }
@@ -61,15 +63,26 @@
 }
 
 .advantages__block--arrow-yes {
-  padding-right: 45px;
+  padding-top: 40px;
+  padding-right: 50px;
+}
+
+.advantages__block--zodiac {
+  padding-top: 42px;
 }
 
 .advantages__block--zodiac>p {
   padding-right: 50px;
 }
 
-.advantages__block--zodiac div {
-  padding-right: 60px;
+.advantages__block--zodiac {
+  h3 {
+    margin-top: 22px;
+  }
+
+  div {
+    padding-right: 60px;
+  }
 }
 
 @media (max-width: $max-size) {
@@ -82,7 +95,7 @@
   .advantages {
     background: url(../img/background/middle_back_tablet.png) no-repeat;
     background-size: 100%;
-    padding-top: 80px;
+    padding-top: 90px;
 
     h2 {
       font-size: 26px;
@@ -92,21 +105,45 @@
   @media (min-resolution: $retina) {
     .advantages {
       background: url(../img/background/middle_back_tabletx2.png) no-repeat;
+      background-size: 100%;
     }
   }
 
   .advantages__block {
-    padding: 25px 20px;
+    padding: 20px;
+    padding-top: 25px;
+    width: 30.5%;
+
+    h3 {
+      margin-bottom: 7px;
+    }
 
     svg {
-      transform: scale(0.75);
+      transform: scale(0.9);
     }
   }
   .advantages__block--ship {
     padding-right: 15px;
+    padding-top: 20px;
+
+    svg {
+      transform: scale(0.8);
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
   }
 
   .advantages__block--zodiac {
+    svg {
+      margin-top: 5px;
+    }
+
+    h3 {
+      margin-top: 18px;
+    }
+
     div, p {
       padding-right: 0;
       display: inline;
@@ -124,7 +161,7 @@
     background: url(../img/background/middle_back_mobile.png) no-repeat;
     background-size: 100%;
     flex-wrap: wrap;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 35px;
 
     h2 {
@@ -136,6 +173,7 @@
   @media (min-resolution: $retina) {
     .advantages {
       background: url(../img/background/middle_back_mobilex2.png) no-repeat;
+      background-size: 100%;
     }
   }
 
@@ -144,13 +182,24 @@
     margin-bottom: 30px;
 
     h3 {
+      margin-top: 12px;
       width: 175px;
     }
   }
 
-  .advantages__block--zodiac div {
-    padding-right: 25px;
-    display: block;
+  .advantages__block--arrow-yes h3 {
+    margin-top: 18px;
+  }
+
+  .advantages__block--zodiac {
+    h3 {
+      margin-top: 20px;
+    }
+
+    div {
+      padding-right: 25px;
+      display: block;
+    }
   }
 
   .advantages__block--zodiac>p {
