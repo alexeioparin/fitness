@@ -62,7 +62,8 @@
     margin-bottom: 25px;
   }
 
-  input[type="text"] {
+  input[type="text"],
+  input[type="email"] {
     box-sizing: border-box;
     border: none;
     padding: 0 15px;
@@ -70,9 +71,14 @@
     min-height: 43px;
     width: 100%;
     background-color: #F9FBFD;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #011C40;
   }
 
-  input[type="text"]::placeholder {
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -111,6 +117,10 @@
     background-image: url(../img/icons/yes.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  input[type="checkbox"]:focus+label::before {
+    outline: 2px solid #cccccc;
   }
 
   button {
@@ -221,7 +231,8 @@
       margin-bottom: 7px;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="email"] {
       margin-top: 20px;
       margin-bottom: 0;
     }

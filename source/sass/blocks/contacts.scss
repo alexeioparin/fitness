@@ -39,6 +39,14 @@
     margin-right: 10px;
     min-width: 18px;
   }
+
+  a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #011C40;
+  }
 }
 
 @media (max-width: $max-size) {

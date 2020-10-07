@@ -718,7 +718,8 @@ img {
     color: #F9FBFD;
     margin: 0;
     margin-bottom: 25px; }
-  .booking__form input[type="text"] {
+  .booking__form input[type="text"],
+  .booking__form input[type="email"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: none;
@@ -726,28 +727,37 @@ img {
     margin-bottom: 20px;
     min-height: 43px;
     width: 100%;
-    background-color: #F9FBFD; }
-  .booking__form input[type="text"]::-webkit-input-placeholder {
+    background-color: #F9FBFD;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     color: #011C40; }
-  .booking__form input[type="text"]::-moz-placeholder {
+  .booking__form input[type="text"]::-webkit-input-placeholder,
+  .booking__form input[type="email"]::-webkit-input-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     color: #011C40; }
-  .booking__form input[type="text"]:-ms-input-placeholder {
+  .booking__form input[type="text"]::-moz-placeholder,
+  .booking__form input[type="email"]::-moz-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     color: #011C40; }
-  .booking__form input[type="text"]::-ms-input-placeholder {
+  .booking__form input[type="text"]:-ms-input-placeholder,
+  .booking__form input[type="email"]:-ms-input-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
     color: #011C40; }
-  .booking__form input[type="text"]::placeholder {
+  .booking__form input[type="text"]::-ms-input-placeholder,
+  .booking__form input[type="email"]::-ms-input-placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #011C40; }
+  .booking__form input[type="text"]::placeholder,
+  .booking__form input[type="email"]::placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
@@ -781,6 +791,8 @@ img {
     background-image: url(../img/icons/yes.svg);
     background-repeat: no-repeat;
     background-position: center; }
+  .booking__form input[type="checkbox"]:focus + label::before {
+    outline: 2px solid #cccccc; }
   .booking__form button {
     min-height: 43px;
     width: 100%;
@@ -868,7 +880,8 @@ img {
       padding: 0 5px;
       line-height: 140%;
       margin-bottom: 7px; }
-    .booking__form input[type="text"] {
+    .booking__form input[type="text"],
+    .booking__form input[type="email"] {
       margin-top: 20px;
       margin-bottom: 0; }
     .booking__form label {
@@ -928,6 +941,12 @@ img {
   .contacts__description svg {
     margin-right: 10px;
     min-width: 18px; }
+  .contacts__description a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #011C40; }
 
 @media (max-width: 1365px) {
   .contacts__description {
