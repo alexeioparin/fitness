@@ -19,8 +19,10 @@
   }
 
   @media (min-resolution: $retina) {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
-    background-size: auto 1280px, 100%;
+    .main-body {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+      background-size: auto 1280px, 100%;
+    }
   }
 }
 

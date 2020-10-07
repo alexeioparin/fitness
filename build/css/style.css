@@ -196,9 +196,10 @@ img {
     background-size: auto 1280px, 100%; } }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
-  background-size: auto 1280px, 100%; }
+  .main-body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+    background-size: auto 1280px, 100%; } }
 
 @media (max-width: 767px) {
   .main-body {
