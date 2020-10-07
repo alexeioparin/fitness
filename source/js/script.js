@@ -1,9 +1,9 @@
 'use strict';
 
-const menuButton = document.querySelector('.header__button');
-const headerBlock = document.querySelector('.header');
-const mainBlock = document.querySelector('.main-content');
-const introBlock = document.querySelector('.intro');
+let menuButton = document.querySelector('.header__button');
+let headerBlock = document.querySelector('.header');
+let mainBlock = document.querySelector('.main-content');
+let introBlock = document.querySelector('.intro');
 
 headerBlock.classList.remove('menu-opened');
 menuButton.classList.remove('header__button--nojs');
