@@ -1,6 +1,7 @@
 .advantages {
-  background-color: #ffffff;
-  background: url(../img/background/middle_back_desktop.png) no-repeat;
+  background-color: #f9fbfd;
+  background-image: url("../img/background/middle_back_desktop.png");
+  background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 105px;
   padding-bottom: 120px;
@@ -8,7 +9,7 @@
 
 @media (min-resolution: $retina) {
   .advantages {
-    background: url(../img/background/middle_back_desktopx2.png) no-repeat;
+    background: url("../img/background/middle_back_desktopx2.png") no-repeat;
     background-size: 100%;
   }
 }
@@ -32,7 +33,7 @@
 .advantages__block {
   box-sizing: border-box;
   width: 31.3%;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   min-height: 241px;
   padding: 30px;
   padding-right: 30px;
@@ -46,7 +47,7 @@
     line-height: 150%;
     display: flex;
     align-items: center;
-    color: #011C40;
+    color: #011c40;
   }
 
   p, div {
@@ -54,7 +55,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 145%;
-    color: #011C40;
+    color: #011c40;
   }
 }
 

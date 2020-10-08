@@ -1,15 +1,16 @@
 .tours {
   padding-top: 110px;
   padding-bottom: 90px;
+  background-color: #f9fbfd;
 
   h2 {
     text-align: center;
-    margin : 0;
+    margin: 0;
     margin-bottom: 48px;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
-    color: #011C40;
+    color: #011c40;
   }
 }
 
@@ -28,14 +29,13 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   img {
     width: 260px;
     height: 386px;
     object-fit: cover;
-
   }
 }
 
@@ -45,7 +45,7 @@
   width: 260px;
   min-height: 386px;
   box-sizing: border-box;
-  background-color: #011C40;
+  background-color: #011c40;
   padding: 35px 25px;
   padding-top: 75px;
 
@@ -53,7 +53,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   p {
@@ -61,7 +61,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
-    color: #D8D8D9;
+    color: #d8d8d9;
     margin-bottom: 10px;
   }
 
@@ -74,10 +74,10 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
-    color: #011C40;
+    color: #011c40;
     cursor: pointer;
     z-index: 2;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
     text-decoration: none;
   }
 }

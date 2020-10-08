@@ -12,7 +12,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     text-decoration: none;
     margin-left: 33px;
   }
@@ -25,7 +25,6 @@
 }
 
 @media (max-width: $mid-size) {
-
   .site-navigation__list {
     padding-right: 0;
 
@@ -55,7 +54,7 @@
     a {
       font-size: 18px;
       line-height: 22px;
-      color: #011C40;
+      color: #011c40;
       margin-left: 0;
     }
   }

@@ -1,26 +1,37 @@
 .main-body {
   background-color: #cccccc;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktop.jpg) no-repeat;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktop.jpg");
+  background-repeat: no-repeat, no-repeat;
   background-size: auto 1300px, 100%;
 }
 
 @media (min-resolution: $retina) {
   .main-body {
     background-color: #cccccc;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktopx2.jpg) no-repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktopx2.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 1300px, 100%;
+  }
+}
+
+@media (max-width: $max-size) {
+  .main-body {
+    background-size: auto 1300px, 1366px;
+    background-position: top, top center;
   }
 }
 
 @media (max-width: $mid-size) {
   .main-body {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tablet.jpg) no-repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 1280px, 100%;
   }
 
   @media (min-resolution: $retina) {
     .main-body {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tabletx2.jpg");
+      background-repeat: no-repeat, no-repeat;
       background-size: auto 1280px, 100%;
     }
   }
@@ -28,12 +39,14 @@
 
 @media (max-width: $min-size) {
   .main-body {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%) no-repeat, url(../img/background/top-back-mobile.jpg) no-repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobile.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 2000px, 100%;
   }
 
   @media (min-resolution: $retina) {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%) no-repeat, url(../img/background/top-back-mobilex2.jpg) no-repeat;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobilex2.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 2000px, 100%;
   }
 }

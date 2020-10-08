@@ -102,7 +102,7 @@ img {
   .header.menu-opened {
     background-color: #ffffff; }
     .header.menu-opened svg {
-      fill: #011C40; }
+      fill: #011c40; }
     .header.menu-opened .site-navigation__list {
       display: block; }
   .header__button--nojs {
@@ -142,7 +142,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     text-decoration: none;
     margin-left: 33px; }
 
@@ -171,45 +171,56 @@ img {
     .site-navigation__list a {
       font-size: 18px;
       line-height: 22px;
-      color: #011C40;
+      color: #011c40;
       margin-left: 0; }
   .site-navigation__item {
     margin-bottom: 20px; } }
 
 .main-body {
   background-color: #cccccc;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-desktop.jpg) no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktop.jpg) no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-desktop.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktop.jpg");
+  background-repeat: no-repeat, no-repeat;
   background-size: auto 1300px, 100%; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .main-body {
     background-color: #cccccc;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-desktopx2.jpg) no-repeat;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-desktopx2.jpg) no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-desktopx2.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktopx2.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 1300px, 100%; } }
+
+@media (max-width: 1365px) {
+  .main-body {
+    background-size: auto 1300px, 1366px;
+    background-position: top, top center; } }
 
 @media (max-width: 1023px) {
   .main-body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-tablet.jpg) no-repeat;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tablet.jpg) no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 1280px, 100%; } }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%) no-repeat, url(../img/background/top-back-tabletx2.jpg) no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-tabletx2.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tabletx2.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 1280px, 100%; } }
 
 @media (max-width: 767px) {
   .main-body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)) no-repeat, url(../img/background/top-back-mobile.jpg) no-repeat;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%) no-repeat, url(../img/background/top-back-mobile.jpg) no-repeat;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)), url("../img/background/top-back-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobile.jpg");
+    background-repeat: no-repeat, no-repeat;
     background-size: auto 2000px, 100%; } }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)) no-repeat, url(../img/background/top-back-mobilex2.jpg) no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%) no-repeat, url(../img/background/top-back-mobilex2.jpg) no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)), url("../img/background/top-back-mobilex2.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobilex2.jpg");
+  background-repeat: no-repeat, no-repeat;
   background-size: auto 2000px, 100%; }
 
 .main-content {
@@ -225,7 +236,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin: 0;
     margin-bottom: 13px;
     margin-left: 95px;
@@ -240,7 +251,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin: 0;
     margin-left: 95px;
     padding: 0; }
@@ -367,15 +378,16 @@ img {
     width: 100%; } }
 
 .advantages {
-  background-color: #ffffff;
-  background: url(../img/background/middle_back_desktop.png) no-repeat;
+  background-color: #f9fbfd;
+  background-image: url("../img/background/middle_back_desktop.png");
+  background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 105px;
   padding-bottom: 120px; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .advantages {
-    background: url(../img/background/middle_back_desktopx2.png) no-repeat;
+    background: url("../img/background/middle_back_desktopx2.png") no-repeat;
     background-size: 100%; } }
 
 .advantages__wrapper {
@@ -399,7 +411,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 31.3%;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   min-height: 241px;
   padding: 30px;
   padding-right: 30px;
@@ -416,13 +428,13 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #011C40; }
+    color: #011c40; }
   .advantages__block p, .advantages__block div {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 145%;
-    color: #011C40; }
+    color: #011c40; }
 
 .advantages__block--ship {
   padding-right: 15px; }
@@ -524,7 +536,8 @@ img {
 
 .tours {
   padding-top: 110px;
-  padding-bottom: 90px; }
+  padding-bottom: 90px;
+  background-color: #f9fbfd; }
   .tours h2 {
     text-align: center;
     margin: 0;
@@ -532,7 +545,7 @@ img {
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
-    color: #011C40; }
+    color: #011c40; }
 
 .tours__card {
   position: relative;
@@ -547,7 +560,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #F9FBFD; }
+    color: #f9fbfd; }
   .tours__card img {
     width: 260px;
     height: 386px;
@@ -561,20 +574,20 @@ img {
   min-height: 386px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #011C40;
+  background-color: #011c40;
   padding: 35px 25px;
   padding-top: 75px; }
   .tours__description strong {
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    color: #F9FBFD; }
+    color: #f9fbfd; }
   .tours__description p {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
-    color: #D8D8D9;
+    color: #d8d8d9;
     margin-bottom: 10px; }
   .tours__description a {
     display: -webkit-box;
@@ -591,10 +604,10 @@ img {
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
-    color: #011C40;
+    color: #011c40;
     cursor: pointer;
     z-index: 2;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
     text-decoration: none; }
 
 .tours__card:hover h3 {
@@ -899,7 +912,8 @@ img {
 
 .contacts {
   padding: 120px 0;
-  padding-bottom: 117px; }
+  padding-bottom: 117px;
+  background-color: #f9fbfd; }
 
 .contacts__wrapper {
   -ms-flex-wrap: nowrap;

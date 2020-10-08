@@ -8,7 +8,7 @@
     line-height: 66px;
     display: flex;
     align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin: 0;
     margin-bottom: 13px;
     margin-left: 95px;
@@ -21,7 +21,7 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin: 0;
     margin-left: 95px;
     padding: 0;
@@ -61,7 +61,7 @@
       line-height: 140%;
     }
 
-    h1+p {
+    h1 + p {
       padding-right: 70px;
     }
   }
