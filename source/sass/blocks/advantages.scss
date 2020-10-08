@@ -26,7 +26,7 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
-    color: #011C40;
+    color: #011c40;
   }
 }
 
@@ -50,7 +50,8 @@
     color: #011c40;
   }
 
-  p, div {
+  p,
+  div {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
@@ -68,15 +69,13 @@
   padding-right: 50px;
 }
 
-.advantages__block--zodiac {
-  padding-top: 42px;
-}
-
-.advantages__block--zodiac>p {
+.advantages__block--zodiac > p {
   padding-right: 50px;
 }
 
 .advantages__block--zodiac {
+  padding-top: 42px;
+
   h3 {
     margin-top: 22px;
   }
@@ -94,7 +93,7 @@
 
 @media (max-width: $mid-size) {
   .advantages {
-    background: url(../img/background/middle_back_tablet.png) no-repeat;
+    background: url("../img/background/middle_back_tablet.png") no-repeat;
     background-size: 100%;
     padding-top: 90px;
 
@@ -105,7 +104,7 @@
 
   @media (min-resolution: $retina) {
     .advantages {
-      background: url(../img/background/middle_back_tabletx2.png) no-repeat;
+      background: url("../img/background/middle_back_tabletx2.png") no-repeat;
       background-size: 100%;
     }
   }
@@ -123,6 +122,7 @@
       transform: scale(0.9);
     }
   }
+
   .advantages__block--ship {
     padding-right: 15px;
     padding-top: 20px;
@@ -145,21 +145,21 @@
       margin-top: 18px;
     }
 
-    div, p {
+    div,
+    p {
       padding-right: 0;
       display: inline;
     }
   }
 
-  .advantages__block--zodiac>p {
+  .advantages__block--zodiac > p {
     padding-right: 0;
   }
-
 }
 
 @media (max-width: $min-size) {
   .advantages {
-    background: url(../img/background/middle_back_mobile.png) no-repeat;
+    background: url("../img/background/middle_back_mobile.png") no-repeat;
     background-size: 100%;
     flex-wrap: wrap;
     padding-top: 58px;
@@ -173,7 +173,7 @@
 
   @media (min-resolution: $retina) {
     .advantages {
-      background: url(../img/background/middle_back_mobilex2.png) no-repeat;
+      background: url("../img/background/middle_back_mobilex2.png") no-repeat;
       background-size: 100%;
     }
   }
@@ -203,7 +203,7 @@
     }
   }
 
-  .advantages__block--zodiac>p {
+  .advantages__block--zodiac > p {
     padding-right: 0;
   }
 }

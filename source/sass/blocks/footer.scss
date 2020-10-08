@@ -1,6 +1,6 @@
 .footer {
   min-height: 138px;
-  background-color: #011C40;
+  background-color: #011c40;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 .footer__nav {
   display: flex;
 
-  >a {
+  > a {
     display: flex;
     align-items: center;
     margin-right: 7px;
@@ -38,7 +38,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #F9FBFD;
+    color: #f9fbfd;
     text-decoration: none;
     margin-left: 33px;
   }
@@ -53,7 +53,8 @@
     padding: 0;
   }
 
-  a, li {
+  a,
+  li {
     display: flex;
     align-items: center;
   }
