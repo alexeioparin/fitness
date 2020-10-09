@@ -101,7 +101,7 @@
 
 @media (max-width: $mid-size) {
   .tours {
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 70px;
 
     h2 {
@@ -112,6 +112,7 @@
   .tours__card {
     h3 {
       left: 35px;
+      bottom: 29px;
     }
 
     img {

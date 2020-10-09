@@ -10,7 +10,7 @@
     display: none;
     padding: 0;
     border: none;
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
@@ -49,7 +49,7 @@
 
   .header__wrapper {
     flex-wrap: wrap;
-    padding-top: 15px;
+    padding-top: 18px;
     min-height: 50px;
 
     button {

@@ -5,3 +5,40 @@
   height: 1px;
   margin: -1px;
 }
+
+.fix-align-items-header::after {
+  content: "";
+  display: inline-block;
+  min-height: 110px;
+  visibility: hidden;
+}
+
+.fix-align-items-footer::after {
+  content: "";
+  display: inline-block;
+  min-height: 138px;
+  visibility: hidden;
+}
+
+.image-poly {
+  font-family: "object-fit: cover";
+}
+
+@media (max-width: $mid-size) {
+  .fix-align-items-header::after {
+    content: "";
+    min-height: 80px;
+  }
+
+  .fix-align-items-footer::after {
+    content: "";
+    min-height: 120px;
+  }
+}
+
+@media (max-width: $min-size) {
+  .fix-align-items-header::after {
+    content: "";
+    min-height: 18px;
+  }
+}

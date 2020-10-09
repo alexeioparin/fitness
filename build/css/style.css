@@ -60,7 +60,6 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: inherit;
   position: relative; }
 
 @media (max-width: 1023px) {
@@ -89,7 +88,7 @@ img {
     display: none;
     padding: 0;
     border: none;
-    background-color: inherit; }
+    background-color: rgba(0, 0, 0, 0); }
 
 @media (max-width: 1023px) {
   .header__wrapper {
@@ -113,7 +112,7 @@ img {
   .header__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 15px;
+    padding-top: 18px;
     min-height: 50px; }
     .header__wrapper button {
       display: block; }
@@ -124,13 +123,21 @@ img {
     .header__button.button-active svg {
       display: none; } }
 
+.site-navigation {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
 .site-navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
-  padding-right: 5px; }
+  padding-right: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .site-navigation__list a {
     font-style: normal;
     font-weight: 500;
@@ -177,23 +184,25 @@ img {
     margin-bottom: 20px; } }
 
 .main-body {
-  background-color: #cccccc;
+  background-color: #6598c7;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-desktop.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktop.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto 1300px, 100%; }
+  background-size: 100% 1300px, 100%; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .main-body {
-    background-color: #cccccc;
+    background-color: #6598c7;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-desktopx2.jpg");
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktopx2.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: auto 1300px, 100%; } }
+    background-size: 100% 1300px, 100%; } }
 
 @media (max-width: 1365px) {
   .main-body {
-    background-size: auto 1300px, 1366px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-desktop.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-desktop.jpg");
+    background-size: 100% 1300px, 1366px;
     background-position: top, top center; } }
 
 @media (max-width: 1023px) {
@@ -201,27 +210,27 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-tablet.jpg");
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: auto 1280px, 100%; } }
+    background-size: 100% 1275px, 100%; } }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-body {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white)), url("../img/background/top-back-tabletx2.jpg");
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, white 50%), url("../img/background/top-back-tabletx2.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: auto 1280px, 100%; } }
+    background-size: 100% 1275px, 100%; } }
 
 @media (max-width: 767px) {
   .main-body {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)), url("../img/background/top-back-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobile.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: auto 2000px, 100%; } }
+    background-size: 100% 2000px, 100%; } }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, white)), url("../img/background/top-back-mobilex2.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, white 25%), url("../img/background/top-back-mobilex2.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto 2000px, 100%; }
+  background-size: 100% 2000px, 100%; }
 
 .main-content {
   padding-top: 160px; }
@@ -270,7 +279,7 @@ img {
 
 @media (max-width: 767px) {
   .main-content {
-    padding-top: 110px; }
+    padding-top: 108px; }
     .main-content h1 {
       font-size: 36px;
       line-height: 125%;
@@ -292,9 +301,37 @@ img {
   height: 1px;
   margin: -1px; }
 
+.fix-align-items-header::after {
+  content: "";
+  display: inline-block;
+  min-height: 110px;
+  visibility: hidden; }
+
+.fix-align-items-footer::after {
+  content: "";
+  display: inline-block;
+  min-height: 138px;
+  visibility: hidden; }
+
+.image-poly {
+  font-family: "object-fit: cover"; }
+
+@media (max-width: 1023px) {
+  .fix-align-items-header::after {
+    content: "";
+    min-height: 80px; }
+  .fix-align-items-footer::after {
+    content: "";
+    min-height: 120px; } }
+
+@media (max-width: 767px) {
+  .fix-align-items-header::after {
+    content: "";
+    min-height: 18px; } }
+
 .intro {
-  margin-top: 395px;
-  margin-bottom: 120px;
+  margin-top: 397px;
+  margin-bottom: 117px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +342,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  width: 100%; }
+  width: 100%;
+  padding-left: 3px;
+  padding-right: 3px; }
   .intro h2 {
     font-weight: 600;
     font-size: 28px;
@@ -332,7 +371,8 @@ img {
     height: 301px; }
 
 .intro__wrapper {
-  width: 515px; }
+  width: 515px;
+  padding-bottom: 6px; }
 
 @media (max-width: 1365px) {
   .intro__wrapper {
@@ -342,7 +382,10 @@ img {
 @media (max-width: 1023px) {
   .intro {
     margin-top: 365px;
-    margin-bottom: 93px; }
+    margin-bottom: 87px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; }
     .intro h2 {
       font-size: 26px;
       line-height: 140%;
@@ -367,7 +410,7 @@ img {
       width: 100%;
       height: auto;
       margin: 0 auto;
-      margin-top: 33px; }
+      margin-top: 27px; }
     .intro h2 {
       font-size: 24px;
       width: 70%; }
@@ -381,11 +424,12 @@ img {
   background-image: url("../img/background/middle_back_desktop.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 105px;
+  padding-top: 109px;
   padding-bottom: 120px; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .advantages {
+    background-color: #f9fbfd;
     background: url("../img/background/middle_back_desktopx2.png") no-repeat;
     background-size: 100%; } }
 
@@ -395,7 +439,8 @@ img {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding: 0 3px; }
   .advantages__wrapper h2 {
     width: 100%;
     text-align: center;
@@ -409,15 +454,15 @@ img {
 .advantages__block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 31.3%;
+  width: 31.1%;
   background-color: #f9fbfd;
   min-height: 241px;
   padding: 30px;
   padding-right: 30px;
   padding-bottom: 25px; }
   .advantages__block h3 {
-    margin-top: 17px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -440,28 +485,33 @@ img {
   padding-right: 15px; }
 
 .advantages__block--arrow-yes {
-  padding-top: 40px;
+  padding-top: 34px;
   padding-right: 50px; }
+  .advantages__block--arrow-yes h3 {
+    margin-top: 21px;
+    margin-bottom: 8px; }
 
 .advantages__block--zodiac > p {
   padding-right: 50px; }
 
 .advantages__block--zodiac {
-  padding-top: 42px; }
+  padding-top: 37px; }
   .advantages__block--zodiac h3 {
-    margin-top: 22px; }
+    margin-top: 24px; }
   .advantages__block--zodiac div {
     padding-right: 60px; }
 
 @media (max-width: 1365px) {
   .advantages {
-    background-size: 1366px; } }
+    background-size: 1366px;
+    padding: 40px 0; } }
 
 @media (max-width: 1023px) {
   .advantages {
     background: url("../img/background/middle_back_tablet.png") no-repeat;
     background-size: 100%;
-    padding-top: 90px; }
+    padding-top: 90px;
+    padding-bottom: 100px; }
     .advantages h2 {
       font-size: 26px; } }
 
@@ -471,6 +521,8 @@ img {
     background-size: 100%; } }
 
 @media (max-width: 1023px) {
+  .advantages__wrapper {
+    padding: 0; }
   .advantages__block {
     padding: 20px;
     padding-top: 25px;
@@ -488,6 +540,8 @@ img {
               transform: scale(0.8); }
     .advantages__block--ship h3 {
       margin-top: 10px; }
+  .advantages__block--arrow-yes h3 {
+    margin-top: 18px; }
   .advantages__block--zodiac svg {
     margin-top: 5px; }
   .advantages__block--zodiac h3 {
@@ -630,12 +684,13 @@ img {
 
 @media (max-width: 1023px) {
   .tours {
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 70px; }
     .tours h2 {
       font-size: 26px; }
   .tours__card h3 {
-    left: 35px; }
+    left: 35px;
+    bottom: 29px; }
   .tours__card img {
     width: 309px;
     height: 386px; }
@@ -699,14 +754,14 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 13px;
-  padding-bottom: 10px; }
+  padding-bottom: 7px; }
   .booking__title h2 {
     font-weight: bold;
     font-size: 40px;
     line-height: 150%;
     color: #011c40;
     margin: 0;
-    margin-bottom: 5px; }
+    margin-bottom: 8px; }
   .booking__title p {
     font-weight: normal;
     font-size: 18px;
@@ -818,7 +873,8 @@ img {
 @media (max-width: 1365px) {
   .booking {
     background-size: 1366px;
-    background-position: center; } }
+    background-position: center;
+    padding: 33px 50px; } }
 
 @media (max-width: 1023px) {
   .booking {
@@ -837,10 +893,11 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     margin-left: 5px; }
     .booking__title h2 {
-      font-size: 34px; }
+      font-size: 34px;
+      margin-bottom: 4px; }
     .booking__title p {
       text-align: center; }
   .booking__wrapper {
@@ -855,13 +912,16 @@ img {
     margin-left: 0;
     margin-right: 0; }
     .booking__form h3 {
-      margin-bottom: 27px; } }
+      margin-bottom: 27px; }
+    .booking__form input[type="text"],
+    .booking__form input[type="email"] {
+      padding-left: 18px; } }
 
 @media (max-width: 767px) {
   .booking {
     background: url("../img/background/bottom_back_mobile.jpg") no-repeat;
     background-size: 100%;
-    padding: 60px 0;
+    padding: 58px 0;
     padding-bottom: 65px; } }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -871,12 +931,13 @@ img {
 
 @media (max-width: 767px) {
   .booking__title {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-left: 0; }
     .booking__title h2 {
       font-size: 24px;
       line-height: 130%;
       text-align: center;
-      margin-bottom: 13px; }
+      margin-bottom: 15px; }
     .booking__title p {
       width: 100%;
       -webkit-box-sizing: border-box;
@@ -888,7 +949,7 @@ img {
   .booking__form {
     width: 100%;
     padding: 40px 30px;
-    padding-top: 34px; }
+    padding-top: 36px; }
     .booking__form h3 {
       text-align: center;
       padding: 0 5px;

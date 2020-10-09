@@ -1,11 +1,13 @@
 .intro {
-  margin-top: 395px;
-  margin-bottom: 120px;
+  margin-top: 397px;
+  margin-bottom: 117px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   width: 100%;
+  padding-left: 3px;
+  padding-right: 3px;
 
   h2 {
     font-weight: 600;
@@ -35,6 +37,7 @@
 
 .intro__wrapper {
   width: 515px;
+  padding-bottom: 6px;
 }
 
 @media (max-width: $max-size) {
@@ -47,7 +50,10 @@
 @media (max-width: $mid-size) {
   .intro {
     margin-top: 365px;
-    margin-bottom: 93px;
+    margin-bottom: 87px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 
     h2 {
       font-size: 26px;
@@ -83,7 +89,7 @@
       width: 100%;
       height: auto;
       margin: 0 auto;
-      margin-top: 33px;
+      margin-top: 27px;
     }
 
     h2 {
