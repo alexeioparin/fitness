@@ -69,7 +69,7 @@ img {
 
 @media (max-width: 767px) {
   .wrapper {
-    margin: 0 15px; } }
+    margin: 0 4.7%; } }
 
 .header__wrapper {
   display: -webkit-box;
@@ -605,6 +605,11 @@ img {
     line-height: 150%;
     color: #011c40; }
 
+.tours__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .tours__card {
   position: relative;
   margin: 0 15px;
@@ -618,7 +623,8 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    color: #f9fbfd; }
+    color: #f9fbfd;
+    z-index: 1; }
   .tours__card img {
     width: 260px;
     height: 386px;
@@ -626,7 +632,10 @@ img {
        object-fit: cover; }
 
 .tours__description {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
   text-decoration: none;
   width: 260px;
   min-height: 386px;
@@ -670,10 +679,11 @@ img {
 
 .tours__card:hover h3 {
   left: 25px;
-  top: 35px; }
+  top: 35px;
+  z-index: 1; }
 
 .tours__card:hover img {
-  display: none; }
+  opacity: 0; }
 
 .tours__card:hover .tours__description {
   display: -webkit-box;
@@ -685,7 +695,8 @@ img {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  opacity: 1; }
 
 @media (max-width: 1023px) {
   .tours {
@@ -693,6 +704,10 @@ img {
     padding-bottom: 70px; }
     .tours h2 {
       font-size: 26px; }
+  .tours__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .tours__card h3 {
     left: 35px;
     bottom: 29px; }
@@ -715,7 +730,7 @@ img {
       margin-bottom: 30px; }
   .tours__card {
     width: 100%;
-    margin: 0;
+    max-width: 400px;
     margin-bottom: 26px; }
     .tours__card h3 {
       bottom: 22px; }
@@ -725,11 +740,19 @@ img {
               box-sizing: border-box;
       width: 100%;
       height: auto; }
+  .tours__card:hover h3 {
+    left: 45px; }
   .tours__description {
-    width: 100%;
-    margin: 0 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
+    height: 99.4%;
     padding: 25px 35px;
-    padding-top: 75px; } }
+    padding-top: 75px; }
+    .tours__description p {
+      margin-bottom: 15px; } }
 
 .booking {
   background-color: #f9fbfd;
@@ -776,6 +799,7 @@ img {
     width: 345px; }
 
 .booking__form {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 405px;
@@ -806,41 +830,49 @@ img {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    border-radius: 0; }
   .booking__form input[type="text"]::-webkit-input-placeholder,
   .booking__form input[type="email"]::-webkit-input-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    opacity: 0.5; }
   .booking__form input[type="text"]::-moz-placeholder,
   .booking__form input[type="email"]::-moz-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    opacity: 0.5; }
   .booking__form input[type="text"]:-ms-input-placeholder,
   .booking__form input[type="email"]:-ms-input-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    opacity: 0.5; }
   .booking__form input[type="text"]::-ms-input-placeholder,
   .booking__form input[type="email"]::-ms-input-placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    opacity: 0.5; }
   .booking__form input[type="text"]::placeholder,
   .booking__form input[type="email"]::placeholder {
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    opacity: 0.5; }
   .booking__form input[type="checkbox"] {
     position: absolute;
     z-index: -1;
-    opacity: 0; }
+    opacity: 0;
+    left: 50px;
+    top: 70%; }
   .booking__form input[type="checkbox"] + label {
     font-weight: normal;
     font-size: 10px;
@@ -852,7 +884,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    cursor: pointer; }
   .booking__form input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
@@ -861,7 +894,8 @@ img {
     min-width: 18px;
     margin-right: 5px;
     background-color: #f9fbfd;
-    vertical-align: middle; }
+    vertical-align: middle;
+    cursor: pointer; }
   .booking__form input[type="checkbox"]:checked + label::before {
     background-image: url("../img/icons/yes.svg");
     background-repeat: no-repeat;
@@ -874,7 +908,10 @@ img {
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
-    color: #011c40; }
+    color: #011c40;
+    border-radius: 0;
+    border: none;
+    background-color: #f9fbfd; }
 
 @media (max-width: 1365px) {
   .booking {
@@ -942,7 +979,7 @@ img {
 
 @media (max-width: 767px) {
   .booking__title {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     margin-left: 0; }
     .booking__title h2 {
       font-size: 24px;
@@ -961,7 +998,8 @@ img {
     width: 100%;
     padding: 40px 30px;
     padding-top: 36px;
-    min-width: 290px; }
+    min-width: 290px;
+    max-width: 450px; }
     .booking__form h3 {
       text-align: center;
       padding: 0 5px;
@@ -976,7 +1014,10 @@ img {
       margin-top: 19px;
       padding-right: 50px; }
     .booking__form input[type="checkbox"] + label {
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
     .booking__form input[type="checkbox"] + label::before {
       width: 20px;
       min-width: 20px;
@@ -1030,11 +1071,19 @@ img {
     margin-right: 10px;
     min-width: 18px; }
   .contacts__description a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     color: #011c40; }
+  .contacts__description a:hover {
+    opacity: 0.5; }
 
 @media (max-width: 1365px) {
   .contacts__description {

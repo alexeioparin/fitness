@@ -84,7 +84,7 @@
     </section>
     <section class="tours">
       <h2>Ближайшие круизы</h2>
-      <div class="wrapper">
+      <div class="wrapper tours__wrapper">
 
         <div class="tours__card">
           <h3>Круиз “Астория”</h3>
@@ -272,7 +272,7 @@
           <input type="text" name="name" value="" placeholder="Валерия" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
           <input type="text" name="phone" value="" placeholder="89236889975" pattern="[0-9]{3,15}" required="">
           <input type="email" name="mail" value="" placeholder="grishaewa.lera@gmail.com" required="">
-          <input type="checkbox" id="agree">
+          <input type="checkbox" id="agree" required="">
           <label for="agree">Я согласен на обработку моих персональных данных</label>
           <button type="submit" class="button">Оставить заявку</button>
         </form>
@@ -297,10 +297,10 @@
             г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
           </div>
           <div>
-            <svg width="18" height="18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
             <a href="tel:8-800-200-00-00">
+              <svg width="18" height="18">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
               8-800-200-00-00
             </a>
           </div>

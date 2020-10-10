@@ -42,11 +42,17 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     color: #011c40;
+  }
+
+  a:hover {
+    opacity: 0.5;
   }
 }
 
