@@ -101,7 +101,9 @@
 
 @media (max-width: $mid-size) {
   .advantages {
-    background: url("../img/background/middle_back_tablet.png") no-repeat;
+    background-color: #f9fbfd;
+    background-image: url("../img/background/middle_back_tablet.png");
+    background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
@@ -176,7 +178,9 @@
 
 @media (max-width: $min-size) {
   .advantages {
-    background: url("../img/background/middle_back_mobile.png") no-repeat;
+    background-color: #f9fbfd;
+    background-image: url("../img/background/middle_back_mobile.png");
+    background-repeat: no-repeat;
     background-size: 100%;
     flex-wrap: wrap;
     padding-top: 58px;
