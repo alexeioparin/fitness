@@ -126,7 +126,8 @@ img {
 .site-navigation {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  width: 90%; }
 
 .site-navigation__list {
   display: -webkit-box;
@@ -137,7 +138,9 @@ img {
   padding-right: 5px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .site-navigation__list a {
     font-style: normal;
     font-weight: 500;
@@ -836,35 +839,35 @@ img {
   .booking__form input[type="email"]::-webkit-input-placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 43px;
     color: #011c40;
     opacity: 0.5; }
   .booking__form input[type="text"]::-moz-placeholder,
   .booking__form input[type="email"]::-moz-placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 43px;
     color: #011c40;
     opacity: 0.5; }
   .booking__form input[type="text"]:-ms-input-placeholder,
   .booking__form input[type="email"]:-ms-input-placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 43px;
     color: #011c40;
     opacity: 0.5; }
   .booking__form input[type="text"]::-ms-input-placeholder,
   .booking__form input[type="email"]::-ms-input-placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 43px;
     color: #011c40;
     opacity: 0.5; }
   .booking__form input[type="text"]::placeholder,
   .booking__form input[type="email"]::placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 43px;
     color: #011c40;
     opacity: 0.5; }
   .booking__form input[type="checkbox"] {

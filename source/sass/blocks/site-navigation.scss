@@ -1,5 +1,6 @@
 .site-navigation {
   flex-grow: 1;
+  width: 90%;
 }
 
 .site-navigation__list {
@@ -8,6 +9,7 @@
   padding: 0;
   padding-right: 5px;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   a {
     font-style: normal;
