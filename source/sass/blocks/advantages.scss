@@ -10,7 +10,8 @@
 @media (min-resolution: $retina) {
   .advantages {
     background-color: #f9fbfd;
-    background: url("../img/background/middle_back_desktopx2.png") no-repeat;
+    background-image: url("../img/background/middle_back_desktopx2.png");
+    background-repeat: no-repeat;
     background-size: 100%;
   }
 }
