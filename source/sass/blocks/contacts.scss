@@ -98,7 +98,7 @@
 @media (max-width: $min-size) {
   .contacts {
     padding: 45px 0;
-    padding-bottom: 62px;
+    padding-bottom: 65px;
   }
 
   .contacts__wrapper {
@@ -106,10 +106,11 @@
     margin: 0 15px;
 
     img {
+      display: block;
       width: 100%;
+      max-width: 450px;
       height: 316px;
       margin: 0 auto;
-      margin-right: 0;
       margin-top: 10px;
     }
   }

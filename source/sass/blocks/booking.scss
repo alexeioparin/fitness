@@ -69,24 +69,24 @@
     box-sizing: border-box;
     border: none;
     padding: 0 15px;
+    padding-top: 1px;
     margin-bottom: 20px;
     min-height: 43px;
     width: 100%;
     background-color: #f9fbfd;
     font-weight: normal;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 0;
     color: #011c40;
     border-radius: 0;
+
   }
 
   input[type="text"]::placeholder,
   input[type="email"]::placeholder {
     font-weight: normal;
     font-size: 14px;
-    line-height: 43px;
-    color: #011c40;
-    opacity: 0.5;
+    color: #a0a0a0;
   }
 
   input[type="checkbox"] {
