@@ -1,4 +1,4 @@
-* text eol=native
+* text=auto
 
 *.png binary
 *.jpg binary
