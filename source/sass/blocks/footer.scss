@@ -46,6 +46,10 @@
     text-decoration: none;
     margin-left: 33px;
   }
+
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 .footer__social {
@@ -62,6 +66,10 @@
   li {
     display: flex;
     align-items: center;
+  }
+
+  a:hover {
+    opacity: 0.5;
   }
 
   li {

@@ -76,7 +76,7 @@
     background-color: #f9fbfd;
     font-weight: normal;
     font-size: 14px;
-    line-height: 0;
+    line-height: 41px;
     color: #011c40;
     border-radius: 0;
   }
@@ -139,6 +139,10 @@
     border-radius: 0;
     border: none;
     background-color: #f9fbfd;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #cccccc;
   }
 }
 

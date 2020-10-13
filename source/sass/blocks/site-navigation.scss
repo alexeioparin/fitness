@@ -22,6 +22,10 @@
     text-decoration: none;
     margin-left: 33px;
   }
+
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $max-size) {
