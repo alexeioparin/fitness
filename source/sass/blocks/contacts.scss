@@ -7,7 +7,8 @@
 .contacts__wrapper {
   flex-wrap: nowrap;
   position: relative;
-  margin: 0 103px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .contacts__description {
@@ -53,6 +54,13 @@
 
   a:hover {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contacts__wrapper {
+    width: auto;
+    margin: 0 103px;
   }
 }
 

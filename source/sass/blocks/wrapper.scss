@@ -1,10 +1,18 @@
 .wrapper {
-  margin: 0 100px;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    margin: 0 100px;
+    width: auto;
+  }
 }
 
 @media (max-width: $mid-size) {
