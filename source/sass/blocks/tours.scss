@@ -24,7 +24,7 @@
   margin-bottom: 26px;
   text-decoration: none;
   width: 22.3%;
-  height: auto;
+  height: 100%;
 
   a {
     display: flex;
@@ -42,7 +42,7 @@
     border: none;
     z-index: -1;
     position: absolute;
-    bottom: 35px;
+    bottom: 39px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -53,7 +53,7 @@
 
   a:focus + h3 {
     left: 25px;
-    top: 35px;
+    top: 30px;
     z-index: 1;
   }
 
@@ -75,7 +75,7 @@
     bottom: 27px;
     left: 30px;
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 18px;
     line-height: 150%;
     color: #f9fbfd;
     z-index: 1;
@@ -83,7 +83,7 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 386px;
     object-fit: cover;
   }
 }
@@ -101,12 +101,12 @@
   height: 99%;
   box-sizing: border-box;
   background-color: #011c40;
-  padding: 100px 25px;
-  padding-top: 75px;
+  padding: 90px 25px;
+  padding-top: 70px;
 
   strong {
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 14px;
     line-height: 140%;
     color: #f9fbfd;
   }
@@ -114,7 +114,7 @@
   p {
     margin: 0;
     font-weight: normal;
-    font-size: 1vw;
+    font-size: 14px;
     line-height: 140%;
     color: #d8d8d9;
     margin-bottom: 10px;
@@ -129,7 +129,7 @@
 
   h3 {
     left: 25px;
-    top: 35px;
+    top: 30px;
     z-index: 1;
   }
 
@@ -142,14 +142,62 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .tours__card a {
-    bottom: 10px;
-    height: 30px;
+@media (max-width: $max-size) {
+  .tours__card {
+    h3 {
+      font-size: 1.3vw;
+    }
+
+    strong,
+    p {
+      font-size: 1vw;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .tours__card:hover {
+    h3 {
+      top: 25px;
+    }
+  }
+
+  .tours__card {
+    a {
+      bottom: 15px;
+    }
+
+    img {
+      height: 350px;
+    }
   }
 
   .tours__description {
-    padding-top: 60px;
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tours__card {
+    a {
+      height: 30px;
+    }
+
+    img {
+      height: 310px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .tours__card:hover {
+    h3 {
+      top: 15px;
+    }
+  }
+
+  .tours__description {
+    padding-top: 45px;
   }
 }
 
