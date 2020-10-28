@@ -1,3 +1,167 @@
 .super-games {
   background-color: #ffffff;
+  padding: 120px 0;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.super-games__wrapper {
+  flex-wrap: nowrap;
+}
+
+.super-games__info {
+  background-color: #ED0233;
+  flex-grow: 1;
+  margin-bottom: 4px;
+  padding: 80px 78px;
+
+  p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.super-games__title {
+  display: flex;
+  margin-bottom: 25px;
+
+  h2 {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 202px;
+    margin: 0;
+    margin-right: 50px;
+  }
+}
+
+.super-games__date,
+.super-games__time {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.super-games__date div,
+.super-games__time div {
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  border-top: 1px solid #FFFFFF;
+}
+
+.super-games__date {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.super-games__date div {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.super-games__date span {
+  margin-left: 7px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+@media (max-width: $mid-size) {
+  .super-games {
+    padding: 100px 0;
+
+    img {
+      width: 386px;
+      height: 292px;
+    }
+  }
+
+  .super-games__info {
+    margin-bottom: 4px;
+    padding: 40px 45px;
+
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .super-games__title {
+    margin-bottom: 5px;
+
+    h2 {
+      font-size: 52px;
+      line-height: 52px;
+      width: 120px;
+      margin-right: 29px;
+    }
+  }
+
+  .super-games__date,
+  .super-games__time {
+    font-size: 12px;
+  }
+
+  .super-games__date div,
+  .super-games__time div {
+    font-size: 24px;
+  }
+
+  .super-games__date {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .super-games__date div {
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .super-games__date span {
+    margin-left: 7px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: $min-size) {
+  .super-games {
+    padding: 70px 0;
+
+    img {
+      width: 290px;
+      height: 292px;
+    }
+  }
+
+  .super-games__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .super-games__info {
+    margin-bottom: 0;
+    padding: 40px;
+    flex-grow: 0;
+    width: 320px;
+
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
 }
