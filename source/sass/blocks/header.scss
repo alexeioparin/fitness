@@ -16,8 +16,34 @@
   }
 }
 
-// @media (max-width: $mid-size) {
-//
-// }
+@media (max-width: $mid-size) {
+  .header__wrapper {
+    min-height: 60px;
 
-// @media (max-width: $min-size)
+    img {
+      width: 82px;
+      height: 17px;
+    }
+
+    a {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+@media (max-width: $min-size) {
+  .header__wrapper {
+
+    img {
+      width: 68px;
+      height: 15px;
+    }
+
+    a {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
