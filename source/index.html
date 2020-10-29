@@ -49,7 +49,7 @@
         </ul>
       </section>
     </div>
-    <section class="gym">                                <!-- зал -->
+    <section class="gym fix-align-items-gym" >                                <!-- зал -->
       <div class="wrapper gym__wrapper">
         <div class="gym__description">
           <h2>Тренажерный зал</h2>
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="super-games">                            <!-- super-games -->
+    <section class="super-games fix-align-items-super-games">                            <!-- super-games -->
       <div class="wrapper super-games__wrapper">
         <div class="super-games__info">
           <div class="super-games__title">
@@ -135,7 +135,7 @@
           <p>Ежегодные соревнования по CrossFit</p>
           <a href="#" class="button">Заполнить заявку</a>
         </div>
-        <!-- 1х: 500px; 2x: 1000px -->
+        <!-- 1х: 660px; 2x: 1320px -->
         <picture>
           <!-- <source type="image/webp" media="(max-width:1023px)" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x">
           <source type="image/webp" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x"> -->
@@ -145,68 +145,233 @@
         </picture>
       </div>
     </section>
-    <section class="trainers fix-align-items-trainers">      <!-- тренеры -->
-      <h2>Тренеры</h2>
-      <div class="trainers__block">
+    <section class="trainers fix-align-items-trainers">         <!-- тренеры -->
+      <div class="wrapper">
+        <h2>Тренеры</h2>
+        <div class="trainers__block">
+          <svg width="16" height="32" class="trainers__arrow-prev">
+            <use xlink:href="#icon-prev"></use>
+          </svg>
+          <a href="#!" class="trainers__card">
+            <h3>Анна Павлова</h3>
+            <div class="trainers__card-description">
+              <span>CrossFit</span>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 4 года</li>
+              </ul>
+            </div>
+            <!-- 1х: 260px; 2x: 520px -->
+            <picture>
+              <!-- <source type="image/webp" media="(max-width:1023px)" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x">
+              <source type="image/webp" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x"> -->
+              <img src="img/content/trainer1.jpg" alt="Фото тренера"
+              srcset="img/content/trainer1@2x.jpg 2x"
+              width="260" height="294" class="image-poly">
+            </picture>
+
+          </a>
+          <a href="#!" class="trainers__card">
+            <h3>Алексей Лавров</h3>
+            <div class="trainers__card-description">
+              <span>CrossFit</span>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 5 лет</li>
+              </ul>
+            </div>
+            <!-- 1х: 260px; 2x: 520px -->
+            <picture>
+              <!-- <source type="image/webp" media="(max-width:1023px)" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x">
+              <source type="image/webp" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x"> -->
+              <img src="img/content/trainer2.jpg" alt="Фото тренера"
+              srcset="img/content/trainer2@2x.jpg 2x"
+              width="260" height="294" class="image-poly">
+            </picture>
+          </a>
+          <a href="#!" class="trainers__card">
+            <h3>Александр Пашков</h3>
+            <div class="trainers__card-description">
+              <span>CrossFit</span>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <!-- 1х: 260px; 2x: 520px -->
+            <picture>
+              <!-- <source type="image/webp" media="(max-width:1023px)" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x">
+              <source type="image/webp" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x"> -->
+              <img src="img/content/trainer3.jpg" alt="Фото тренера"
+              srcset="img/content/trainer3@2x.jpg 2x"
+              width="260" height="294" class="image-poly">
+            </picture>
+          </a>
+          <a href="#!" class="trainers__card">
+            <h3>Мария Кетова</h3>
+            <div class="trainers__card-description">
+              <span>CrossFit</span>
+              <ul>
+                <li>Certified Level 80 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <!-- 1х: 260px; 2x: 520px -->
+            <picture>
+              <!-- <source type="image/webp" media="(max-width:1023px)" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x">
+              <source type="image/webp" srcset="img/content/top-desktop.webp 1x, img/content/top-desktop.webp 2x"> -->
+              <img src="img/content/trainer4.jpg" alt="Фото тренера"
+              srcset="img/content/trainer4@2x.jpg 2x"
+              width="260" height="294" class="image-poly">
+            </picture>
+          </a>
+          <svg width="16" height="32" class="trainers__arrow-next">
+            <use xlink:href="#icon-next"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">                           <!-- преимущества -->
+      <h2>Наши преимущества</h2>
+      <div class="wrapper advantages__wrapper">
+        <div class="advantages__top">
+          <div class="">
+            <div class="">
+              <strong>900</strong>
+              <span>кв/м</span>
+            </div>
+            <div class="">
+              <b>Площадь</b>
+              <p>Занимайтесь без очередей и толкучки</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <strong>70</strong>
+              <span>машин</span>
+            </div>
+            <div class="">
+              <b>Собственная парковка</b>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__center">
+          <strong>100</strong>
+          <span>Тренажеров</span>
+          <p>Современные тренажеры на все группы мышц</p>
+        </div>
+        <div class="advantages__bottom">
+          <div class="">
+            <div class="">
+              <strong>350</strong>
+              <span>мест</span>
+            </div>
+            <div class="">
+              <b>Комфорт</b>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <strong>5+</strong>
+              <span>лет</span>
+            </div>
+            <div class="">
+              <b>Тренерский опыт</b>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shares">                                      <!-- акции -->
+      <h2>Акции</h2>
+      <div class="wrapper shares__wrapper">
+        <div class="shares__unlimit">
+          <div class="">
+            <span>Год</span>
+            <strong>4999</strong>
+            <p>Безлимитный абонемент в тренажерный зал</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <img src="img/content/shares-desktop.jpg" alt="Спортсменка в синих трениках" width="280" height="462">
+        </div>
+        <div class="shares__other">
+          <div class="">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+            <a href="#!">Подробнее</a>
+          </div>
+          <div class="">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#!">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">                                   <!-- отзывы -->
+      <h2>Отзывы</h2>
+      <div class="wrapper feedback__wrapper">
         <svg width="16" height="32">
           <use xlink:href="#icon-prev"></use>
         </svg>
-        <a href="#"><img src="img/content/trainer1.jpg" alt=""></a>
-        <a href="#"><img src="img/content/trainer2.jpg" alt=""></a>
-        <a href="#"><img src="img/content/trainer3.jpg" alt=""></a>
-        <a href="#"><img src="img/content/trainer4.jpg" alt=""></a>
+        <div class="feedback__window">
+          <img src="img/content/user-icon.png" alt="Аватар клиента" width="80" height="80">
+          <div class="">
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+        </div>
         <svg width="16" height="32">
           <use xlink:href="#icon-next"></use>
         </svg>
       </div>
     </section>
-    <section class="advantages">
-      <h2>Наши преимущества</h2>
-      <div class="wrapper">
-        <div class="">
-          <div class="">
-
-          </div>
-          <div class="">
-
-          </div>
-        </div>
-        <div class="">
-
-        </div>
-        <div class="">
-          <div class="">
-
-          </div>
-          <div class="">
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="shares">
-      <h2>Акции</h2>
-      <div class="">
-
-      </div>
-      <div class="">
-
-      </div>
-    </section>
-    <section class="feedback">
-      <h2>Отзывы</h2>
-
-    </section>
-    <div class="wrapper">
+    <div class="bottom-block">                              <!-- форма + контакты -->
       <section class="request-form">
-        <h2>Бесплатное занятие</h2>
+        <div class="wrapper request-form__wrapper">
+          <h2>Бесплатное занятие</h2>
+          <form class="" action="" method="post">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <input type="submit" name="" value="Отправить" class="button">
+          </form>
+        </div>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
+        <div class="wrapper contacts__wrapper">
+          <h2>Контакты</h2>
+          <div class="">
+            <div class="">
+              <strong>Адрес:</strong>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </div>
+            <div class="">
+              <strong>График работы:</strong>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <strong>Телефон:</strong>
+              <p>8-800-555-55-55</p>
+            </div>
+            <div class="">
+              <strong>Email:</strong>
+              <p>omsk@supergym.ru</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
-  <footer class="footer fix-align-items-footer">
+  <footer class="footer fix-align-items-footer">                  <!-- футер -->
     <div class="wrapper footer__wrapper">
       <a><img src="img/logo.svg" alt="Лого сайта" width="70" height="38" class="image-poly"></a>
       <div class="footer__nav">
@@ -225,14 +390,14 @@
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a></li>
-          <li><a href="#" aria-label="facebook">
-            <svg width="11" height="20">
-              <use xlink:href="#icon-fb"></use>
-            </svg>
-          </a></li>
           <li><a href="#" aria-label="instagram">
             <svg width="20" height="20">
               <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" aria-label="facebook">
+            <svg width="11" height="20">
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a></li>
         </ul>

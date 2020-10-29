@@ -1,3 +1,73 @@
 .request-form {
-  
+  background-color: #102654;
+  width: 50%;
+  padding: 70px 0;
+
+  h2 {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  input {
+    background-color: inherit;
+  }
+
+  input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #74819C;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"]::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+}
+
+.request-form__wrapper {
+  max-width: 483px;
+}
+
+@media (max-width: $mid-size) {
+  .request-form {
+    width: 100%;
+    padding: 70px 90px;
+    padding-right: 110px;
+    box-sizing: border-box;
+
+    h2 {
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+}
+
+@media (max-width: $min-size) {
+  .request-form {
+    width: 100%;
+    padding: 70px 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+    }
+  }
 }

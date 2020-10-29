@@ -1,3 +1,37 @@
 .footer {
   background-color: #030A1A;
 }
+
+.footer__wrapper {
+  min-height: 108px;
+  align-items: center;
+}
+
+.footer__nav {
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  a {
+    margin: 0 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.footer__social {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    margin: 0 10px;
+  }
+}

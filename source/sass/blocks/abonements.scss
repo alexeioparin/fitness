@@ -48,6 +48,7 @@
     color: rgba(16, 38, 84, 0.5);
     padding: 0;
     position: relative;
+    cursor: pointer;
   }
 
   .abonements__active-item {
@@ -135,8 +136,9 @@
   }
 }
 
-.abonements__card--active {
+.abonements__card:hover {
   border: 7px solid red;
+  padding: 61px 70px;
 
   a {
     color: #ffffff;
