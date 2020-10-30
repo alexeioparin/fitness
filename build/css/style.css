@@ -1523,20 +1523,35 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
-.footer__nav ul {
-  list-style: none;
+.footer__nav {
+  width: 68.6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0; }
-
-.footer__nav a {
-  margin: 0 20px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
-  text-decoration: none; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer__nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0; }
+  .footer__nav a {
+    margin: 0 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none; }
+  .footer__nav li:first-child {
+    margin-right: 250px;
+    width: 89px;
+    height: 21px; }
 
 .footer__social ul {
   display: -webkit-box;
@@ -1546,7 +1561,52 @@ img {
   padding: 0; }
 
 .footer__social a {
-  margin: 0 10px; }
+  margin: 0 12px; }
+
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    min-height: 114px; }
+  .footer__nav {
+    width: 78.9%; }
+    .footer__nav img {
+      width: 82px;
+      height: 18px; }
+    .footer__nav a {
+      margin: 0 15px; }
+    .footer__nav li:first-child {
+      margin-right: 50px;
+      width: 82px;
+      height: 18px; }
+  .footer__social a {
+    margin: 0 10px; } }
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 50px 0; }
+  .footer__wrapper {
+    min-height: 114px; }
+  .footer__nav {
+    width: 100%; }
+    .footer__nav img {
+      width: 68px;
+      height: 15px; }
+    .footer__nav ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .footer__nav li:first-child {
+      margin-right: 0;
+      width: 50%;
+      height: auto; }
+    .footer__nav li {
+      width: 50%;
+      margin-bottom: 20px; }
+    .footer__nav a {
+      margin: 0 15px; }
+  .footer__social a {
+    margin: 0 10px; }
+  .footer__social svg {
+    -webkit-transform: scale(1.33);
+            transform: scale(1.33); } }
 
 .button {
   width: 100%;

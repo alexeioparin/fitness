@@ -1,18 +1,9 @@
 'use strict';
 
-let onCkickShowMenu = document.querySelector('.header__button');
-let headerBlock = document.querySelector('.header');
-let mainBlock = document.querySelector('.main-content');
-let introBlock = document.querySelector('.intro');
+let abonMenu = document.querySelector('.abonements__menu');
+let abonMenuItems = abonMenu.querySelectorAll('li button');
 
-headerBlock.classList.remove('menu-opened');
-onCkickShowMenu.classList.remove('header__button--nojs');
-mainBlock.classList.remove('menu-opened');
-introBlock.classList.remove('menu-opened');
-
-onCkickShowMenu.addEventListener('click', function() {
-  headerBlock.classList.toggle('menu-opened');
-  onCkickShowMenu.classList.toggle('button-active');
-  mainBlock.classList.toggle('menu-opened');
-  introBlock.classList.toggle('menu-opened');
-})
+abonMenu.addEventListener('click', function(evt) {
+  abonMenuItems.forEach(element => element.classList.remove('abonements__active-item'));
+  evt.target.classList.add('abonements__active-item');
+});
