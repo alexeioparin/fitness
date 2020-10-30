@@ -44,7 +44,7 @@ img {
   src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff"); }
 
 .wrapper {
-  width: 1200px;
+  max-width: 1166px;
   margin: 0 auto;
   padding: 0;
   display: -webkit-box;
@@ -55,12 +55,9 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative; }
-
-@media (max-width: 1400px) {
-  .wrapper {
-    margin: 0 100px;
-    width: auto; } }
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @media (max-width: 1199px) {
   .wrapper {
@@ -83,11 +80,12 @@ img {
           align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 50px; }
+  min-height: 50px;
+  padding: 0 5px; }
   .header__wrapper a {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 26px;
-    line-height: 26px;
+    line-height: 18px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none; }
@@ -159,13 +157,14 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%; }
   .intro img {
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    margin-right: 82px; }
 
 .intro__description {
   display: -webkit-box;
@@ -175,15 +174,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 120px;
+  padding-top: 112px;
   padding-bottom: 50px;
-  width: 33.9%; }
+  width: 34.3%; }
   .intro__description p {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-weight: normal;
@@ -199,13 +195,13 @@ img {
     margin: 0;
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 109px;
-    line-height: 109px;
+    line-height: 110px;
     text-align: right;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.038em;
     color: #FFFFFF; }
   .intro__description a {
-    margin-left: 42.3%;
-    width: 57.7%; }
+    margin-left: 54.3%;
+    width: 58.5%; }
 
 .intro__equipment {
   list-style: none;
@@ -213,7 +209,8 @@ img {
   margin: 0;
   margin-right: -80px;
   margin-bottom: 20px;
-  min-width: 29%; }
+  min-width: 29%;
+  text-align: right; }
   .intro__equipment li {
     font-weight: normal;
     font-size: 14px;
@@ -230,7 +227,8 @@ img {
           flex-direction: row-reverse;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  margin-bottom: 63px; }
 
 .intro__social {
   list-style: none;
@@ -244,7 +242,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 50px; }
+  margin-bottom: 47px; }
   .intro__social a {
     font-weight: normal;
     font-size: 12px;
@@ -326,7 +324,7 @@ img {
 
 .super-games {
   background-color: #ffffff;
-  padding: 122px 0; }
+  padding: 120px 0; }
   .super-games img {
     -o-object-fit: cover;
        object-fit: cover; }
@@ -468,7 +466,7 @@ img {
 
 .abonements {
   background-color: #F8F9FC;
-  padding: 110px 0; }
+  padding: 118px 0; }
 
 .abonements__wrapper {
   -webkit-box-orient: vertical;
@@ -478,7 +476,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  max-width: 1155px; }
   .abonements__wrapper h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 49px;
@@ -486,13 +485,13 @@ img {
     letter-spacing: 0.03em;
     color: #102654;
     margin: 0;
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
 
 .abonements__wrapper::after {
   content: url("../img/content/weight-desktop.png");
   position: absolute;
-  right: -100px;
-  bottom: -260px;
+  right: -105px;
+  bottom: -270px;
   z-index: 0; }
 
 .abonements__menu {
@@ -547,7 +546,7 @@ img {
   background-color: #ffffff;
   width: 30.9%;
   min-height: 448px;
-  padding: 68px 77px;
+  padding: 60px 77px;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -557,14 +556,14 @@ img {
     line-height: 29px;
     color: #102654;
     margin: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   .abonements__card > span {
     display: inline-block;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
     color: #495A7D;
-    margin-bottom: 85px; }
+    margin-bottom: 65px; }
   .abonements__card p {
     background-color: inherit;
     font-weight: bold;
@@ -572,7 +571,7 @@ img {
     line-height: 150%;
     color: #103AAE;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     position: relative;
     z-index: 1; }
   .abonements__card p::before {
@@ -592,7 +591,8 @@ img {
     color: #102654; }
   .abonements__card a {
     color: #102654;
-    border: 2px solid #102654; }
+    border: 2px solid #102654;
+    min-height: 66px; }
 
 .abonements__card:hover {
   border: 7px solid red;
@@ -679,28 +679,30 @@ img {
       flex-wrap: nowrap; }
 
 .gym__description {
-  width: 30.4%; }
+  width: 30.4%;
+  margin-left: 62px; }
   .gym__description h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.035em;
     color: #102654;
-    margin-top: 40px;
-    margin-bottom: 10px; }
+    margin-top: 43px;
+    margin-bottom: 12px; }
   .gym__description strong {
     display: inline-block;
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
     color: #102654;
-    margin-bottom: 25px; }
+    margin-bottom: 40px; }
   .gym__description p {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     color: #102654;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 8px; }
 
 .gym__image img {
   -o-object-fit: cover;
@@ -710,7 +712,7 @@ img {
   position: relative;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: -63px;
+  left: -65px;
   width: 364px;
   height: 228px; }
   .gym__video svg {
@@ -861,11 +863,24 @@ img {
             transform: translateY(-50%);
     cursor: pointer; }
 
+.trainers__mask {
+  overflow: hidden; }
+
+.trainers__slider {
+  min-width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .trainers__card {
   position: relative;
-  width: 260px;
+  width: 25%;
   height: 294px;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-right: 10px; }
   .trainers__card h3 {
     position: absolute;
     font-weight: bold;
@@ -917,6 +932,34 @@ img {
 
 .trainers__arrow-next {
   right: -40px; }
+
+@media (max-width: 1199px) {
+  .trainers {
+    padding-bottom: 100px; }
+    .trainers h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+  .trainers__block svg {
+    position: relative; }
+  .trainers__mask {
+    width: 83.5%; }
+  .trainers__slider {
+    min-width: 400%; }
+  .trainers__arrow-prev {
+    left: 0; }
+  .trainers__arrow-next {
+    right: 0; } }
+
+@media (max-width: 767px) {
+  .trainers {
+    padding-bottom: 70px; }
+    .trainers h2 {
+      font-size: 32px;
+      line-height: 32px; }
+  .trainers__slider {
+    min-width: 800%; } }
 
 .advantages {
   background-color: #F8F9FC;
@@ -1125,7 +1168,9 @@ img {
     color: #102654; }
   .shares img {
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    width: 280px;
+    height: 462px; }
 
 .shares__unlimit {
   display: -webkit-box;
@@ -1610,7 +1655,7 @@ img {
 
 .button {
   width: 100%;
-  min-height: 57px;
+  min-height: 59px;
   border: 3px solid #FFFFFF;
   font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: bold;
