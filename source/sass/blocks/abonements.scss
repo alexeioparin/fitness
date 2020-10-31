@@ -1,6 +1,7 @@
 .abonements {
   background-color: #F8F9FC;
   padding: 118px 0;
+  position: relative;
 }
 
 .abonements__wrapper {
@@ -20,12 +21,15 @@
   }
 }
 
-.abonements__wrapper::after {
-  content: url("../img/content/weight-desktop.png");
+.abonements::after {
+  content: "";
+  background-image: url("../img/content/weight-desktop.png");
   position: absolute;
-  right: -105px;
-  bottom: -270px;
+  right: 0;
+  bottom: -140px;
   z-index: 0;
+  width: 287px;
+  height: 484px;
 }
 
 .abonements__menu {
@@ -140,7 +144,7 @@
 
 .abonements__card:hover {
   border: 7px solid red;
-  padding: 61px 70px;
+  padding: 53px 70px;
 
   a {
     color: #ffffff;
@@ -161,21 +165,38 @@
   content: "2700";
 }
 
+@media (min-resolution: $retina) {
+  .abonements::after {
+    content: "";
+    background-image: url("../img/content/weight-desktop@2x.png");
+    position: absolute;
+    right: 0;
+    bottom: -140px;
+    z-index: 0;
+    width: 287px;
+    height: 484px;
+  }
+}
+
 @media (max-width: $mid-size) {
   .abonements {
-    padding: 90px 0;
+    padding: 100px 0;
   }
 
   .abonements__wrapper h2 {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
-  .abonements__wrapper::after {
-    content: url("../img/content/weight-tablet.png");
-    right: -45px;
-    bottom: -220px;
+  .abonements::after {
+    content: "";
+    background-image: url("../img/content/weight-tablet.png");
+    background-size: 100%;
+    right: 0;
+    bottom: -80px;
+    width: 347px;
+    height: 444px;
   }
 
   .abonements__menu {
@@ -194,13 +215,25 @@
 
   .abonements__card {
     width: 442px;
-    padding: 68px 118px;
+    padding: 62px 118px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
 
   .abonements__card--active {
     background-color: #F8F9FC;
+  }
+
+  @media (min-resolution: $retina) {
+    .abonements::after {
+      content: "";
+      background-image: url("../img/content/weight-tablet@2x.png");
+      background-size: 100%;
+      right: 0;
+      bottom: -80px;
+      width: 347px;
+      height: 444px;
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 .shares {
   background-color: #ffffff;
-  padding: 110px 0;
+  padding: 118px 0 110px;
   text-align: center;
 
   h2 {
@@ -9,22 +9,30 @@
     line-height: 49px;
     letter-spacing: 0.03em;
     color: #102654;
+    margin: 0;
+    margin-bottom: 56px;
   }
 
   img {
     object-fit: cover;
-    width: 280px;
+    min-width: 280px;
     height: 462px;
   }
 }
 
+.shares__wrapper {
+  max-width: 84.9%;
+}
+
 .shares__unlimit {
   display: flex;
-  width: 48%;
+  width: 48.2%;
 
   div {
     background-color: #ED0233;
     padding: 45px;
+    padding-right: 40px;
+    margin-bottom: 4px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -34,7 +42,7 @@
   span {
     font-weight: bold;
     font-size: 28px;
-    line-height: 156%;
+    line-height: 90%;
     color: #FFFFFF;
   }
 
@@ -68,15 +76,15 @@
 }
 
 .shares__other {
-  width: 48%;
-
+  width: 48.2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 4px;
 
   div {
     min-height: 211px;
-    padding: 35px;
+    padding: 25px 27px 29px;
     border: 6px solid blue;
     box-sizing: border-box;
     display: flex;
@@ -94,7 +102,7 @@
   }
 
   p {
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: auto;
     text-align: left;
   }
@@ -112,11 +120,12 @@
 @media (max-width: $mid-size) {
 
   .shares {
-    padding: 90px 0;
+    padding: 93px 0;
 
     h2 {
       font-size: 42px;
       line-height: 42px;
+      margin-bottom: 45px;
     }
 
     img {
@@ -137,7 +146,7 @@
   }
 
   .shares__unlimit {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .shares__other {
@@ -145,6 +154,10 @@
 
     div {
       width: 47.8%;
+    }
+
+    p {
+      line-height: 135%;
     }
   }
 }

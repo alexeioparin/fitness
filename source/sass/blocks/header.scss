@@ -19,7 +19,8 @@
 
 @media (max-width: $mid-size) {
   .header__wrapper {
-    min-height: 60px;
+    min-height: 63px;
+    padding: 0;
 
     img {
       width: 82px;

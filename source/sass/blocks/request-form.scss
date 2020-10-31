@@ -1,13 +1,15 @@
 .request-form {
   background-color: #102654;
   width: 50%;
-  padding: 70px 0;
+  padding: 58px 0 70px;
+  padding-right: 65px;
+  box-sizing: border-box;
 
   h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 49px;
     line-height: 64px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.035em;
     text-transform: lowercase;
     color: #FFFFFF;
     margin: 0;
@@ -17,7 +19,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 38px;
+
   }
 
   input {
@@ -25,9 +28,11 @@
   }
 
   input[type="text"] {
+    width: 45.5%;
     border: none;
     border-bottom: 1px solid #74819C;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    padding-bottom: 5px;
   }
 
   input[type="text"]::placeholder {
@@ -36,16 +41,22 @@
     line-height: 16px;
     color: #FFFFFF;
   }
+
+  input[type="submit"] {
+    min-height: 55px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .request-form__wrapper {
-  max-width: 483px;
+  max-width: 410px;
 }
 
 @media (max-width: $mid-size) {
   .request-form {
     width: 100%;
-    padding: 70px 90px;
+    padding: 65px 87px 68px;
     padding-right: 110px;
     box-sizing: border-box;
 
@@ -53,6 +64,19 @@
       font-size: 42px;
       line-height: 42px;
     }
+
+    form {
+      width: 99%;
+      padding-top: 40px;
+    }
+
+    input[type="text"] {
+      width: 43%;
+    }
+  }
+
+  .request-form__wrapper {
+    max-width: 100%;
   }
 }
 

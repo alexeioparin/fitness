@@ -6,15 +6,19 @@
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.045em;
     color: #102654;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 54px;
   }
 
   img {
     object-fit: cover;
   }
+}
+
+.trainers__wrapper {
+  width: 1160px;
 }
 
 .trainers__block {
@@ -36,17 +40,17 @@
 }
 
 .trainers__slider {
-  min-width: 200%;
+  min-width: 206.5%;
   display: flex;
   justify-content: space-between;
 }
 
 .trainers__card {
   position: relative;
-  width: 25%;
+  width: 20%;
   height: 294px;
   text-decoration: none;
-  padding-right: 10px;
+  margin-right: 10px;
 
   h3 {
     position: absolute;
@@ -54,9 +58,9 @@
     font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    bottom: 10px;
+    bottom: 5px;
     z-index: 2;
   }
 }
@@ -108,24 +112,29 @@
 }
 
 .trainers__arrow-prev {
-  left: -40px;
+  left: -55px;
 }
 
 .trainers__arrow-next {
-  right: -40px;
+  right: -55px;
 }
 
 @media (max-width: $mid-size) {
 
   .trainers {
+    padding-top: 36px;
     padding-bottom: 100px;
 
     h2 {
       font-size: 42px;
       line-height: 42px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 41px;
     }
+  }
+
+  .trainers__wrapper {
+    width: 88.3%;
   }
 
   .trainers__block {
@@ -139,7 +148,15 @@
   }
 
   .trainers__slider {
-    min-width: 400%;
+    min-width: 418%;
+  }
+
+  .trainers__card {
+    width: 268px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .trainers__arrow-prev {

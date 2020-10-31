@@ -46,7 +46,7 @@
 
 .gym__video {
   position: relative;
-  transform: translateY(-50%);
+  transform: translateY(-52%);
   left: -65px;
   width: 364px;
   height: 228px;
@@ -90,6 +90,19 @@
   }
 }
 
+@media (max-width: 1350px) {
+  .gym__description {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .gym__description {
+    margin-left: 0;
+    width: 28%;
+  }
+}
+
 @media (max-width: $mid-size) {
   .gym {
     padding-top: 100px;
@@ -108,10 +121,11 @@
       font-size: 42px;
       line-height: 42px;
       margin-top: 0;
+      margin-bottom: 9px;
     }
 
     strong {
-      margin-bottom: 45px;
+      margin-bottom: 35px;
     }
 
     p {
@@ -120,7 +134,7 @@
       line-height: 150%;
       color: #102654;
       padding: 0 85px;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
       margin: 0;
     }
   }
