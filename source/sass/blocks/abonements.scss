@@ -24,6 +24,7 @@
 .abonements::after {
   content: "";
   background-image: url("../img/content/weight-desktop.png");
+  background-size: 100%;
   position: absolute;
   right: 0;
   bottom: -140px;
@@ -169,6 +170,7 @@
   .abonements::after {
     content: "";
     background-image: url("../img/content/weight-desktop@2x.png");
+    background-size: 100%;
     position: absolute;
     right: 0;
     bottom: -140px;
@@ -239,13 +241,17 @@
 
 @media (max-width: $min-size) {
   .abonements {
-    padding: 70px 0;
+    padding: 70px 0 33px;
+  }
+
+  .abonements::after {
+    content: none;
   }
 
   .abonements__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
   }
 
   .abonements__wrapper::after {
@@ -257,26 +263,33 @@
     margin-bottom: 35px;
 
     button {
-      font-size: 18px;
+      font-size: 16px;
+    }
+
+    .abonements__active-item::after {
+      width: 110%;
     }
   }
 
   .abonements__card {
     width: 290px;
-    padding: 55px 42px;
+    padding: 47px 42px;
     margin-bottom: 35px;
+    min-height: 384px;
 
     h3 {
       font-size: 22px;
+      margin-bottom: 7px;
     }
 
     > span {
-      margin-bottom: 70px;
+      margin-bottom: 53px;
     }
 
     p {
       font-size: 48px;
       margin-bottom: 30px;
+      margin-left: 5px;
     }
 
     p::before {

@@ -16,8 +16,6 @@
     width: 100%;
   }
 
-
-
   strong {
     font-weight: bold;
     font-size: 16px;
@@ -102,11 +100,35 @@
 
 @media (max-width: $min-size) {
   .contacts {
-    padding: 70px 0;
+    padding: 68px 0;
 
     h2 {
       font-size: 32px;
       line-height: 32px;
     }
+
+    p {
+      margin-top: 17px;
+    }
+  }
+
+  .contacts__wrapper {
+    display: block;
+
+    > div {
+      margin-right: 0;
+      width: 100%;
+      min-height: 133px;
+    }
+  }
+
+  .contacts__left-side {
+    margin-bottom: 30px;
+  }
+
+  .contacts__right-side {
+    padding-left: 0;
+    border: none;
+
   }
 }

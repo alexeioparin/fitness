@@ -181,8 +181,8 @@
 
 @media (max-width: $min-size) {
   .gym {
-    padding-top: 70px;
-    padding-bottom: 183px;
+    padding-top: 65px;
+    padding-bottom: 105px;
     min-height: 750px;
   }
 
@@ -192,24 +192,24 @@
     h2 {
       font-size: 32px;
       line-height: 32px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     strong {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
 
     p {
       padding: 0;
       padding-right: 30px;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       margin: 0;
     }
   }
 
   .gym__image {
     position: absolute;
-    top: 335px;
+    top: 270px;
     left: calc(50% - 160px);
     width: 320px;
     height: 313px;
@@ -222,7 +222,7 @@
 
   .gym__video {
     left: 0;
-    bottom: -40px;
+    bottom: -35px;
     transform: translate(0);
     width: 320px;
   }

@@ -83,15 +83,25 @@
 @media (max-width: $min-size) {
   .request-form {
     width: 100%;
-    padding: 70px 0;
+    padding: 70px 0 67px;
 
     h2 {
       font-size: 32px;
       line-height: 32px;
     }
 
+    form {
+      padding-top: 38px;
+      width: 100%;
+    }
+
     input[type="text"] {
       width: 100%;
+      margin-bottom: 35px;
+    }
+
+    input[type="submit"] {
+      margin-top: 4px;
     }
   }
 }

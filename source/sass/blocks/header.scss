@@ -37,6 +37,7 @@
 
 @media (max-width: $min-size) {
   .header__wrapper {
+    min-height: 38px;
 
     img {
       width: 68px;

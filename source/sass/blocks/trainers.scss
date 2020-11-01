@@ -174,12 +174,37 @@
     padding-bottom: 70px;
 
     h2 {
-      font-size: 32px;
-      line-height: 32px;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.07em;
+      margin-bottom: 45px;
     }
+  }
+
+  .trainers__wrapper {
+    width: 91%;
+  }
+
+  .trainers__block {
+    svg {
+      transform: scale(0.7) translateY(-70%);
+    }
+  }
+
+  .trainers__mask {
+    width: 81%;
+    margin-left: 7px;
   }
 
   .trainers__slider {
     min-width: 800%;
+  }
+
+  .trainers__card {
+    height: 274px;
+
+    img {
+      height: 100%;
+    }
   }
 }

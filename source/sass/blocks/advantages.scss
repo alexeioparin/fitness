@@ -239,7 +239,7 @@
 
 @media (max-width: $min-size) {
   .advantages {
-    padding: 60px 0;
+    padding: 67px 0 26px;
 
     h2 {
       font-size: 32px;
@@ -258,22 +258,50 @@
     > div {
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    strong {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
+    span {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 auto;
+      margin-top: 7px;
+      width: 80%;
     }
   }
 
-
+  .advantages__bottom>div:first-child,
+  .advantages__top>div:first-child {
+    width: 100%;
+  }
 
   .advantages__center {
     width: 100%;
     min-height: 239px;
-    padding: 50px 74px;
+    padding: 43px 74px;
+    margin-bottom: 50px;
+
+    strong {
+      line-height: 90%;
+    }
 
     span {
       font-size: 22px;
     }
 
     p {
-      margin-top: 20px;
+      margin-top: 7px;
     }
   }
 }
