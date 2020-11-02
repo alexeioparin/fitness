@@ -10,13 +10,17 @@
     letter-spacing: 0.03em;
     color: #102654;
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 
   img {
     object-fit: cover;
     min-width: 280px;
     height: 462px;
+  }
+
+  a:hover {
+    opacity: 0.5;
   }
 }
 
@@ -42,7 +46,7 @@
   span {
     font-weight: bold;
     font-size: 28px;
-    line-height: 90%;
+    line-height: 70%;
     color: #FFFFFF;
   }
 
@@ -52,6 +56,7 @@
     font-size: 70px;
     line-height: 100%;
     color: #FFFFFF;
+    margin-top: 8px;
   }
 
   p {
@@ -85,7 +90,8 @@
   div {
     min-height: 211px;
     padding: 25px 27px 29px;
-    border: 6px solid blue;
+    border: 7px solid blue;
+    border-image: linear-gradient(135deg, #D10A42, 40%, #003EB7 95.31%) 30;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -120,12 +126,12 @@
 @media (max-width: $mid-size) {
 
   .shares {
-    padding: 93px 0;
+    padding: 96px 0 94px;
 
     h2 {
       font-size: 42px;
       line-height: 42px;
-      margin-bottom: 45px;
+      margin-bottom: 43px;
     }
 
     img {
@@ -189,10 +195,15 @@
     div {
       align-items: center;
       margin-bottom: 0;
+      padding-top: 47px;
+    }
+
+    span {
+      line-height: 70%;
     }
 
     strong {
-      line-height: 105%;
+      line-height: 100%;
     }
 
     p {

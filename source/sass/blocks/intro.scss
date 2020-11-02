@@ -89,6 +89,10 @@
     text-decoration: none;
     margin-top: 20px;
   }
+
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $max-size) {

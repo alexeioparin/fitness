@@ -16,6 +16,10 @@
   svg {
     cursor: pointer;
   }
+
+  svg:hover {
+    opacity: 0.5;
+  }
 }
 
 .feedback__wrapper {

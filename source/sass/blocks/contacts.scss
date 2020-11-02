@@ -2,14 +2,14 @@
   background-color: #ffffff;
   border-top: 1px solid #74819C;
   width: 50%;
-  padding: 65px 0 30px;
+  padding: 66px 0 30px;
   box-sizing: border-box;
 
   h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-size: 49px;
-    line-height: 49px;
-    letter-spacing: 0.03em;
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: 0.055em;
     color: #102654;
     margin: 0;
     margin-bottom: 45px;
@@ -30,6 +30,18 @@
     color: #102654;
     margin: 0;
     margin-top: 6px;
+  }
+
+  a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #102654;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.5;
   }
 }
 
@@ -65,9 +77,10 @@
     box-sizing: border-box;
 
     h2 {
-      font-size: 42px;
-      line-height: 42px;
-      margin-bottom: 40px;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 42px;
+      letter-spacing: 0.05em;
     }
 
     strong {
@@ -78,6 +91,10 @@
     p {
       font-size: 18px;
       margin-top: 15px;
+    }
+
+    a {
+      font-size: 18px;
     }
   }
 
@@ -103,8 +120,9 @@
     padding: 68px 0;
 
     h2 {
-      font-size: 32px;
-      line-height: 32px;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
     }
 
     p {

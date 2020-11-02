@@ -1,5 +1,9 @@
 .footer {
   background-color: #030A1A;
+
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 .footer__wrapper {
@@ -10,7 +14,7 @@
 .footer__nav {
   width: 68.6%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
   ul {

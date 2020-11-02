@@ -60,9 +60,13 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     cursor: pointer;
-    border: 1px solid red;
+    border: 2px solid rgba(237, 2, 51, 0.2);
     border-radius: 50%;
     padding: 40px;
+  }
+
+  svg:hover {
+    opacity: 0.5;
   }
 
   &::after {
@@ -134,7 +138,7 @@
       line-height: 150%;
       color: #102654;
       padding: 0 85px;
-      padding-bottom: 40px;
+      padding-bottom: 42px;
       margin: 0;
     }
   }
@@ -154,11 +158,9 @@
    }
   }
 
-
-
   .gym__video {
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -52.5%);
     width: 266px;
     height: 167px;
 
@@ -169,7 +171,7 @@
     svg {
       width: 12px;
       height: 12px;
-      padding: 30px;
+      padding: 28px;
     }
 
     &::before {

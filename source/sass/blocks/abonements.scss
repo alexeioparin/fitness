@@ -1,6 +1,6 @@
 .abonements {
   background-color: #F8F9FC;
-  padding: 118px 0;
+  padding: 118px 0 120px;
   position: relative;
 }
 
@@ -57,8 +57,16 @@
     cursor: pointer;
   }
 
+  button:hover {
+    opacity: 0.5;
+  }
+
   .abonements__active-item {
     color: #102654;
+  }
+
+  .abonements__active-item:hover {
+    opacity: 1;
   }
 
   .abonements__active-item::after {
@@ -82,8 +90,8 @@
 .abonements__card {
   background-color: #ffffff;
   width: 30.9%;
-  min-height: 448px;
-  padding: 60px 77px;
+  min-height: 445px;
+  padding: 60px 75px;
   text-align: center;
   box-sizing: border-box;
 
@@ -129,7 +137,7 @@
     position: absolute;
     z-index: -1;
     left: 0;
-    top: -60px;
+    top: -55px;
   }
 
   span {
@@ -145,6 +153,7 @@
 
 .abonements__card:hover {
   border: 7px solid red;
+  border-image: linear-gradient(135deg, #ED0233 17.6%, #003EB7 95.31%) 30;
   padding: 53px 70px;
 
   a {
@@ -182,7 +191,7 @@
 
 @media (max-width: $mid-size) {
   .abonements {
-    padding: 100px 0;
+    padding: 97px 0 63px;;
   }
 
   .abonements__wrapper h2 {
@@ -196,7 +205,7 @@
     background-image: url("../img/content/weight-tablet.png");
     background-size: 100%;
     right: 0;
-    bottom: -80px;
+    bottom: -125px;
     width: 347px;
     height: 444px;
   }
@@ -220,6 +229,11 @@
     padding: 62px 118px;
     margin: 0 auto;
     margin-bottom: 40px;
+    min-height: 447px;
+
+    p::before {
+      top: -53px;
+    }
   }
 
   .abonements__card--active {
@@ -232,7 +246,7 @@
       background-image: url("../img/content/weight-tablet@2x.png");
       background-size: 100%;
       right: 0;
-      bottom: -80px;
+      bottom: -125px;
       width: 347px;
       height: 444px;
     }
@@ -294,6 +308,8 @@
 
     p::before {
       font-size: 80px;
+      top: -43px;
+      left: -5px;
     }
   }
 

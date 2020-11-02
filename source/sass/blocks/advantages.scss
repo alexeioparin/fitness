@@ -7,18 +7,19 @@
 
   h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-size: 49px;
-    line-height: 49px;
-    letter-spacing: 0.035em;
+    font-size: 47px;
+    line-height: 47px;
+    letter-spacing: 0.055em;
+    padding-left: 3px;
     color: #102654;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 }
 
 .advantages__wrapper {
   max-width: 1045px;
-  min-height: 320px;
+  min-height: 318px;
 }
 
 .advantages__top,
@@ -50,6 +51,9 @@
     line-height: 90%;
     color: blue;
     margin-right: 30px;
+    color: transparent;
+  	background-clip: text;
+  	background-image: linear-gradient(160deg, #ED0233 17.6%, #003EB7 70%);
   }
 
   span {
@@ -98,7 +102,7 @@
   transform: translateX(-50%);
   top: 5px;
   width: 240px;
-  min-height: 310px;
+  min-height: 308px;
   background-color: #1C3374;
   padding: 55px 34px;
   box-sizing: border-box;
@@ -129,12 +133,13 @@
 
 @media (max-width: $mid-size) {
   .advantages {
-    padding: 96px 0;
+    padding: 98px 0 94px;
 
     h2 {
-      font-size: 42px;
-      line-height: 42px;
+      font-size: 40px;
+      line-height: 40px;
       margin-bottom: 50px;
+      letter-spacing: 0.04em;
     }
   }
 
