@@ -273,11 +273,13 @@
       display: inline-block;
       width: 100%;
       text-align: center;
+      vertical-align: baseline;
     }
 
     span {
       display: inline-block;
       margin-bottom: 8px;
+      vertical-align: baseline;
     }
 
     p {
