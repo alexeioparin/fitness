@@ -55,16 +55,35 @@ trainersSlider.addEventListener('mousedown', function(evtStart) {
   trainersSlider.addEventListener('mouseup', onMouseUp);
 })
 
-feedbackPrevButton.addEventListener('click', function() {
+let shiftFeedbackLeft = function() {
   if (feedbackCurrentShift < 0) {
     feedbackCurrentShift += 50;
     feedbackSlider.style.transform = 'translate(' + feedbackCurrentShift + '%)';
   }
-})
+}
 
-feedbackNextButton.addEventListener('click', function() {
+let shiftFeedbackRight = function() {
   if (feedbackCurrentShift > -50) {
     feedbackCurrentShift -= 50;
     feedbackSlider.style.transform = 'translate(' + feedbackCurrentShift + '%)';
   }
+}
+
+feedbackPrevButton.addEventListener('click', shiftFeedbackLeft);
+
+feedbackNextButton.addEventListener('click', shiftFeedbackRight);
+
+feedbackSlider.addEventListener('mousedown', function(evtStart) {
+  evtStart.preventDefault();
+  let startCoords = evtStart.clientX;
+  let onMouseUp = function(evtEnd) {
+    let endCoords = evtEnd.clientX;
+    if (startCoords < endCoords + 50) {
+      shiftFeedbackLeft();
+    } else if (startCoords > endCoords - 50) {
+      shiftFeedbackRight();
+    }
+    feedbackSlider.removeEventListener('mouseup', onMouseUp);
+  }
+  feedbackSlider.addEventListener('mouseup', onMouseUp);
 })
