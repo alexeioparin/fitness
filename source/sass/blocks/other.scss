@@ -1,7 +1,7 @@
 .button {
   width: 100%;
   min-height: 59px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
   font-family: "Roboto Condensed", "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -11,12 +11,18 @@
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   box-sizing: border-box;
 
   &:hover {
     opacity: 0.5;
+  }
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .button {
+    height: 59px;
   }
 }
 

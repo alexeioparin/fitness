@@ -1,5 +1,5 @@
 .abonements {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   padding: 118px 0 120px;
   position: relative;
 }
@@ -47,7 +47,7 @@
   button {
     min-height: 50px;
     border: none;
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0);
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
@@ -74,7 +74,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #D10A42;
+    background-color: #d10a42;
     bottom: -2px;
     left: 0;
   }
@@ -109,7 +109,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    color: #495A7D;
+    color: #495a7d;
     margin-bottom: 65px;
   }
 
@@ -118,7 +118,7 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 150%;
-    color: #103AAE;
+    color: #103aae;
     margin: 0;
     margin-bottom: 35px;
     position: relative;
@@ -132,7 +132,7 @@
     font-weight: bold;
     font-size: 100px;
     line-height: 150%;
-    color: #E8E8E8;
+    color: #e8e8e8;
     opacity: 0.48;
     position: absolute;
     z-index: -1;
@@ -152,14 +152,18 @@
 }
 
 .abonements__card:hover {
-  border: 7px solid red;
-  border-image: linear-gradient(135deg, #ED0233 17.6%, #003EB7 95.31%) 30;
+  border: 7px solid #003eb7;
+  border-image: linear-gradient(135deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   padding: 53px 70px;
 
   a {
     color: #ffffff;
-    background-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: none;
+  }
+
+  p::before {
+    left: - 2px;
   }
 }
 
@@ -191,7 +195,7 @@
 
 @media (max-width: $mid-size) {
   .abonements {
-    padding: 97px 0 63px;;
+    padding: 97px 0 63px;
   }
 
   .abonements__wrapper h2 {
@@ -237,7 +241,7 @@
   }
 
   .abonements__card--active {
-    background-color: #F8F9FC;
+    background-color: #f8f9fc;
   }
 
   @media (min-resolution: $retina) {

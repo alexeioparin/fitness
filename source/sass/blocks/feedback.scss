@@ -40,7 +40,7 @@
 }
 
 .feedback__window {
-  background-color: #1C3374;
+  background-color: #1c3374;
   width: 50%;
   min-height: 242px;
   margin: 0 40px;
@@ -61,7 +61,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   p {
@@ -69,8 +69,15 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 0;
+  }
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .feedback__window img {
+    min-width: 80px;
+    width: 80px;
   }
 }
 

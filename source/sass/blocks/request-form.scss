@@ -11,7 +11,7 @@
     line-height: 64px;
     letter-spacing: 0.035em;
     text-transform: lowercase;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
   }
 
@@ -20,17 +20,16 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 38px;
-
   }
 
   input {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   input[type="text"] {
     width: 45.5%;
     border: none;
-    border-bottom: 1px solid #74819C;
+    border-bottom: 1px solid #74819c;
     margin-bottom: 27px;
     padding-bottom: 5px;
   }
@@ -39,7 +38,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   input[type="submit"] {

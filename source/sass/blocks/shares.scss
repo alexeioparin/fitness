@@ -33,7 +33,7 @@
   width: 48.2%;
 
   div {
-    background-color: #ED0233;
+    background-color: #ed0233;
     padding: 45px;
     padding-right: 40px;
     margin-bottom: 4px;
@@ -47,7 +47,7 @@
     font-weight: bold;
     font-size: 28px;
     line-height: 70%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   strong {
@@ -55,7 +55,7 @@
     font-weight: bold;
     font-size: 70px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 8px;
   }
 
@@ -63,7 +63,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: left;
   }
 
@@ -75,7 +75,7 @@
     align-items: flex-end;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     flex-grow: 1;
   }
 }
@@ -90,8 +90,8 @@
   div {
     min-height: 211px;
     padding: 25px 27px 29px;
-    border: 7px solid blue;
-    border-image: linear-gradient(135deg, #D10A42, 40%, #003EB7 95.31%) 30;
+    border: 7px solid #003eb7;
+    border-image: linear-gradient(135deg, #d10a42 40%, #003eb7 95.31%) 30;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 26px;
-    color: #1C3374;
+    color: #1c3374;
     margin: 0;
   }
 
@@ -119,12 +119,11 @@
     line-height: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #1C3374;
+    color: #1c3374;
   }
 }
 
 @media (max-width: $mid-size) {
-
   .shares {
     padding: 96px 0 94px;
 

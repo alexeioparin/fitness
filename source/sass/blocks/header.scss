@@ -12,12 +12,18 @@
     font-size: 26px;
     line-height: 18px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
   }
 
   a:hover {
     opacity: 0.5;
+  }
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header__wrapper {
+    height: 50px;
   }
 }
 
