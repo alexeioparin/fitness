@@ -6,8 +6,9 @@
   <meta name="description" content="Фитнес-центр">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес-центр</title>
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
 </head>
@@ -437,8 +438,8 @@
         <div class="wrapper request-form__wrapper">
           <h2>Бесплатное занятие</h2>
           <form action="/" method="post">
-            <input type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-            <input type="text" placeholder="Телефон" pattern="[0-9]{3,15}" required>
+            <input type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required aria-label="Имя пользователя">
+            <input type="text" placeholder="Телефон" pattern="[0-9]{3,15}" required aria-label="Телефон пользователя">
             <input type="submit" value="Отправить" class="button">
           </form>
         </div>

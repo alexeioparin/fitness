@@ -89,10 +89,13 @@
     li {
       margin: 0;
       margin-left: 30px;
+      display: flex;
+      align-items: center;
     }
   }
 
   .footer__list {
+
     li:first-child {
       margin-right: 33px;
       width: 82px;
