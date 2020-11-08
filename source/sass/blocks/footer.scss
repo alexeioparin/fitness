@@ -4,6 +4,10 @@
   a:hover {
     opacity: 0.5;
   }
+
+  .footer__logo:hover {
+    opacity: 1;
+  }
 }
 
 .footer__wrapper {
@@ -100,17 +104,28 @@
       margin-right: 33px;
       width: 82px;
       height: 18px;
+      flex-grow: 1;
+      padding-left: 90px;
     }
   }
 
   .footer__social {
+    flex-grow: 1;
+
     ul {
       padding-right: 0;
+      justify-content: flex-end;
     }
 
     li {
       margin-left: 20px;
     }
+  }
+}
+
+@media (max-width: 950px) {
+  .footer__list li:first-child {
+    padding-left: 0;
   }
 }
 
@@ -168,6 +183,7 @@
 
   .footer__social {
     margin-left: 5px;
+    flex-grow: 0;
 
     li {
       margin-left: 0;

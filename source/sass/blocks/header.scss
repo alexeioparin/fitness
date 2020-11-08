@@ -14,10 +14,17 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
+    margin-top: 10px;
   }
 
-  a:hover {
+  a:last-child:hover {
     opacity: 0.5;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 

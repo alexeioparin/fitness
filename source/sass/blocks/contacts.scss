@@ -132,6 +132,9 @@
 
   .contacts__wrapper {
     display: block;
+    max-width: 560px;
+    width: 91%;
+    margin: 0 auto;
 
     > div {
       margin-right: 0;

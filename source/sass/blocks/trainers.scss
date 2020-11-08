@@ -1,15 +1,19 @@
 .trainers {
   background-color: #ffffff;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 123px;
+  box-sizing: border-box;
+  display: flex;
 
   h2 {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
     font-size: 47px;
     line-height: 47px;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.06em;
     color: #102654;
     margin: 0;
     margin-bottom: 56px;
+    margin-left: 5px;
   }
 
   img {
@@ -18,7 +22,9 @@
 }
 
 .trainers__wrapper {
-  width: 1160px;
+  width: 85.4%;
+  max-width: 1166px;
+  align-items: flex-start;
 }
 
 .trainers__block {
@@ -52,7 +58,6 @@
 .trainers__card {
   position: relative;
   width: 11%;
-  height: 294px;
   text-decoration: none;
   margin-right: 10px;
 
@@ -62,9 +67,9 @@
     font-size: 18px;
     line-height: 150%;
     color: #ffffff;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    bottom: 5px;
+    bottom: 8px;
     z-index: 2;
   }
 }
@@ -74,7 +79,7 @@
   box-sizing: border-box;
   background-color: rgba(16, 38, 84, 0.89);
   width: 100%;
-  height: 100%;
+  height: 98.7%;
   padding-top: 75px;
   text-align: center;
   opacity: 0;
@@ -124,15 +129,15 @@
 }
 
 @media (max-width: 1300px) {
-  .trainers__card h3 {
-    bottom: 15px;
+  .trainers__card-description span {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: $mid-size) {
   .trainers {
     padding-top: 36px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
 
     h2 {
       font-size: 40px;
@@ -147,8 +152,11 @@
   }
 
   .trainers__block {
+    align-items: center;
+
     svg {
       position: relative;
+      transform: translateY(0);
     }
   }
 
@@ -162,9 +170,11 @@
 
   .trainers__card {
     width: 268px;
+    margin-right: 0;
 
     img {
       width: 100%;
+      height: 294px;
     }
   }
 
@@ -182,6 +192,8 @@
     padding-bottom: 70px;
 
     h2 {
+      width: 100%;
+      text-align: center;
       font-size: 30px;
       line-height: 30px;
       letter-spacing: 0.07em;
@@ -194,14 +206,16 @@
   }
 
   .trainers__block {
+    width: 290px;
+    margin: 0 auto;
+
     svg {
-      transform: scale(0.7) translateY(-70%);
+      transform: scale(0.7);
     }
   }
 
   .trainers__mask {
-    width: 81%;
-    margin-left: 7px;
+    width: 78%;
   }
 
   .trainers__slider {
@@ -214,5 +228,9 @@
     img {
       height: 100%;
     }
+  }
+
+  .trainers__card-description {
+    height: 100%;
   }
 }

@@ -1,6 +1,6 @@
 .advantages {
   background-color: #f8f9fc;
-  padding: 117px 0 110px;
+  padding: 114px 0;
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -139,13 +139,13 @@
 
 @media (max-width: $mid-size) {
   .advantages {
-    padding: 98px 0 94px;
+    padding: 98px 0 97px;
 
     h2 {
       font-size: 40px;
       line-height: 40px;
       margin-bottom: 50px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.06em;
     }
   }
 
@@ -231,7 +231,7 @@
     width: 442px;
     min-height: 239px;
     padding: 35px 135px 20px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     span {
       font-size: 22px;
@@ -248,8 +248,9 @@
     padding: 67px 0 26px;
 
     h2 {
-      font-size: 32px;
-      line-height: 32px;
+      font-size: 31px;
+      line-height: 31px;
+      letter-spacing: 0.05em;
     }
   }
 

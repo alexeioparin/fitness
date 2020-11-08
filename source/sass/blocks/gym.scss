@@ -1,6 +1,7 @@
 .gym {
   background-color: #ffffff;
   padding-top: 120px;
+  padding-bottom: 7px;
 }
 
 .gym__wrapper {
@@ -47,7 +48,7 @@
 
 .gym__video {
   position: relative;
-  transform: translateY(-52%);
+  transform: translateY(-50%);
   left: -65px;
   width: 364px;
   height: 228px;

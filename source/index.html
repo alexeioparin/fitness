@@ -16,7 +16,9 @@
   <header class="header">
     <div class="wrapper header__wrapper">
       <a><img src="img/logo.svg" alt="Лого сайта" width="87" height="20" class="image-poly"></a>
-      <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+      <div>
+        <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+      </div>
     </div>
   </header>
   <main class="main-content">
@@ -77,7 +79,7 @@
               srcset="img/content/gym-video-desktop@2x.jpg 2x"
               width="364" height="228">
             </picture>
-            <svg width="17" height="17">
+            <svg width="17" height="17" tabindex="0">
               <use xlink:href="#icon-play"></use>
             </svg>
           </div>
@@ -145,26 +147,28 @@
           <a href="#" class="button">Заполнить заявку</a>
         </div>
         <!-- 1х: 660px; 2x: 1320px -->
-        <picture>
-          <source type="image/webp" media="(max-width:767px)" srcset="img/content/super-games-mobile.webp 1x, img/content/super-games-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width:1199px)" srcset="img/content/super-games-tablet.webp 1x, img/content/super-games-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/super-games-desktop.webp 1x, img/content/super-games-desktop@2x.webp 2x">
-          <img src="img/content/super-games-desktop.jpg" alt="Хлопок по куче талька"
-          srcset="img/content/super-games-desktop@2x.jpg 2x"
-          width="660" height="500" class="image-poly">
-        </picture>
+        <div class="super-games__image">
+          <picture>
+            <source type="image/webp" media="(max-width:767px)" srcset="img/content/super-games-mobile.webp 1x, img/content/super-games-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width:1199px)" srcset="img/content/super-games-tablet.webp 1x, img/content/super-games-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/super-games-desktop.webp 1x, img/content/super-games-desktop@2x.webp 2x">
+            <img src="img/content/super-games-desktop.jpg" alt="Хлопок по куче талька"
+            srcset="img/content/super-games-desktop@2x.jpg 2x"
+            width="660" height="500" class="image-poly">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="trainers fix-align-items-trainers">                            <!-- тренеры -->
       <div class="wrapper trainers__wrapper">
         <h2>Тренеры</h2>
         <div class="trainers__block">
-          <svg width="16" height="32" class="trainers__arrow-prev">
+          <svg width="16" height="32" class="trainers__arrow-prev" tabindex="0">
             <use xlink:href="#icon-prev"></use>
           </svg>
           <div class="trainers__mask">
             <div class="trainers__slider">
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Анна Павлова</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -182,7 +186,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Алексей Лавров</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -200,7 +204,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Александр Пашков</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -218,7 +222,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Мария Кетова</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -236,7 +240,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Алексей Лавров</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -254,7 +258,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Алексей Лавров</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -272,7 +276,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Анна Павлова</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -290,7 +294,7 @@
                   width="260" height="294" class="image-poly">
                 </picture>
               </a>
-              <a href="#!" class="trainers__card">
+              <a href="#!" class="trainers__card" tabindex="-1">
                 <h3>Анна Павлова</h3>
                 <div class="trainers__card-description">
                   <span>CrossFit</span>
@@ -310,7 +314,7 @@
               </a>
             </div>
           </div>
-          <svg width="16" height="32" class="trainers__arrow-next">
+          <svg width="16" height="32" class="trainers__arrow-next" tabindex="0">
             <use xlink:href="#icon-next"></use>
           </svg>
         </div>
@@ -439,7 +443,7 @@
           <h2>Бесплатное занятие</h2>
           <form action="/" method="post">
             <input type="text" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required aria-label="Имя пользователя">
-            <input type="text" placeholder="Телефон" pattern="[0-9]{3,15}" required aria-label="Телефон пользователя">
+            <input type="text" placeholder="Телефон" pattern="[0-9+]{3,15}" required aria-label="Телефон пользователя">
             <input type="submit" value="Отправить" class="button">
           </form>
         </div>
@@ -475,7 +479,7 @@
     <div class="wrapper footer__wrapper">
       <div class="footer__nav">
         <ul class="footer__list">
-          <li><a><img src="img/logo.svg" alt="Лого сайта" width="89" height="20" class="image-poly"></a></li>
+          <li><a class="footer__logo"><img src="img/logo.svg" alt="Лого сайта" width="89" height="20" class="image-poly"></a></li>
           <li><a href="#!">Услуги</a></li>
           <li><a href="#!">Абонементы</a></li>
         </ul>
