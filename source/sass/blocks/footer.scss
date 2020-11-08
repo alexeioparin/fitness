@@ -74,6 +74,19 @@
   .footer__wrapper {
     height: 108px;
   }
+
+  .footer__nav {
+    justify-content: flex-start;
+  }
+
+  .footer__list {
+    flex-grow: 0;
+    justify-content: flex-end;
+
+    li:first-child {
+      margin-right: 80px;
+    }
+  }
 }
 
 @media (max-width: $mid-size) {

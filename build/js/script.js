@@ -40,19 +40,23 @@ trainerPrevButton.addEventListener('click', shiftLeft);
 
 trainerNextButton.addEventListener('click', shiftRight);
 
-trainersSlider.addEventListener('mousedown', function(evtStart) {
+trainersSlider.addEventListener('pointerdown', function(evtStart) {
   evtStart.preventDefault();
+  console.log(1);
   let startCoords = evtStart.clientX;
+  console.log(startCoords);
+
   let onMouseUp = function(evtEnd) {
     let endCoords = evtEnd.clientX;
-    if (startCoords < endCoords + 50) {
+    console.log(endCoords);
+    if (startCoords < endCoords + 20) {
       shiftLeft();
-    } else if (startCoords > endCoords - 50) {
+    } else if (startCoords > endCoords - 20) {
       shiftRight();
     }
-    trainersSlider.removeEventListener('mouseup', onMouseUp);
+    trainersSlider.removeEventListener('pointerup', onMouseUp);
   }
-  trainersSlider.addEventListener('mouseup', onMouseUp);
+  trainersSlider.addEventListener('pointerup', onMouseUp);
 })
 
 let shiftFeedbackLeft = function() {
@@ -73,7 +77,7 @@ feedbackPrevButton.addEventListener('click', shiftFeedbackLeft);
 
 feedbackNextButton.addEventListener('click', shiftFeedbackRight);
 
-feedbackSlider.addEventListener('mousedown', function(evtStart) {
+feedbackSlider.addEventListener('pointerdown', function(evtStart) {
   evtStart.preventDefault();
   let startCoords = evtStart.clientX;
   let onMouseUp = function(evtEnd) {
@@ -83,7 +87,7 @@ feedbackSlider.addEventListener('mousedown', function(evtStart) {
     } else if (startCoords > endCoords - 50) {
       shiftFeedbackRight();
     }
-    feedbackSlider.removeEventListener('mouseup', onMouseUp);
+    feedbackSlider.removeEventListener('pointerup', onMouseUp);
   }
-  feedbackSlider.addEventListener('mouseup', onMouseUp);
+  feedbackSlider.addEventListener('pointerup', onMouseUp);
 })

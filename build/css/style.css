@@ -155,6 +155,10 @@ img {
   .main-body {
     background-image: url("../img/background/back-desktop.png"); } }
 
+@-moz-document url-prefix() {
+  .main-body {
+    background-image: url("../img/background/back-desktop.png"); } }
+
 @media (max-width: 1199px) {
   .main-body {
     background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -171,6 +175,11 @@ img {
   .main-body {
     background-image: url("../img/background/back-tablet.png"); } }
 
+@media (max-width: 1199px) {
+  @-moz-document url-prefix() {
+    .main-body {
+      background-image: url("../img/background/back-tablet.png"); } } }
+
 @media (max-width: 767px) {
   .main-body {
     background-image: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -186,6 +195,11 @@ img {
 @media (max-width: 767px) and (-ms-high-contrast: none), (max-width: 767px) and (-ms-high-contrast: active) {
   .main-body {
     background-image: url("../img/background/back-mobile.png"); } }
+
+@media (max-width: 767px) {
+  @-moz-document url-prefix() {
+    .main-body {
+      background-image: url("../img/background/back-mobile.png"); } } }
 
 .intro {
   display: -webkit-box;
@@ -265,7 +279,8 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 63px; }
+  margin-bottom: 63px;
+  width: 100%; }
 
 .intro__social {
   list-style: none;
@@ -1066,7 +1081,7 @@ img {
     color: #ffffff;
     width: 100%;
     text-align: center;
-    bottom: 8px;
+    bottom: 4px;
     z-index: 2; }
 
 .trainers__card-description {
@@ -1075,7 +1090,7 @@ img {
           box-sizing: border-box;
   background-color: rgba(16, 38, 84, 0.89);
   width: 100%;
-  height: 98.7%;
+  height: 100%;
   padding-top: 75px;
   text-align: center;
   opacity: 0; }
@@ -1135,9 +1150,10 @@ img {
       -webkit-transform: translateY(0);
               transform: translateY(0); }
   .trainers__mask {
-    width: 83.5%; }
+    width: 87.8%;
+    margin-left: 27px; }
   .trainers__slider {
-    min-width: 418%; }
+    min-width: 395.5%; }
   .trainers__card {
     width: 268px;
     margin-right: 0; }
@@ -1461,7 +1477,7 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
     min-width: 280px;
-    height: 462px; }
+    height: 100%; }
   .shares a:hover {
     opacity: 0.5; }
 
@@ -1507,7 +1523,8 @@ img {
     font-size: 18px;
     line-height: 140%;
     color: #ffffff;
-    text-align: left; }
+    text-align: left;
+    width: 190px; }
   .shares__unlimit a {
     font-weight: bold;
     font-size: 14px;
@@ -1556,6 +1573,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .shares__other div:first-child {
+    margin-bottom: 20px; }
   .shares__other h3 {
     font-weight: bold;
     font-size: 26px;
@@ -1573,6 +1592,14 @@ img {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1c3374; }
+
+@media (max-width: 1310px) {
+  .shares__unlimit img {
+    min-width: 230px; } }
+
+@media (max-width: 1310px) and (-ms-high-contrast: none), (max-width: 1310px) and (-ms-high-contrast: active) {
+  .shares__unlimit p {
+    width: 140px; } }
 
 @media (max-width: 1199px) {
   .shares {
@@ -1826,7 +1853,8 @@ img {
     padding-top: 38px;
     width: 100%; }
   .request-form input {
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0; }
   .request-form input[type="text"] {
     width: 45.5%;
     border: none;
@@ -2101,7 +2129,20 @@ img {
 
 @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .footer__wrapper {
-    height: 108px; } }
+    height: 108px; }
+  .footer__nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .footer__list {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .footer__list li:first-child {
+      margin-right: 80px; } }
 
 @media (max-width: 1199px) {
   .footer__wrapper {

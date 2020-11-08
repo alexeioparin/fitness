@@ -17,7 +17,7 @@
   img {
     object-fit: cover;
     min-width: 280px;
-    height: 462px;
+    height: 100%;
   }
 
   a:hover {
@@ -66,6 +66,7 @@
     line-height: 140%;
     color: #ffffff;
     text-align: left;
+    width: 190px;
   }
 
   a {
@@ -99,6 +100,10 @@
     justify-content: space-between;
   }
 
+  div:first-child {
+    margin-bottom: 20px;
+  }
+
   h3 {
     font-weight: bold;
     font-size: 26px;
@@ -120,6 +125,18 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1c3374;
+  }
+}
+
+@media (max-width: 1310px) {
+  .shares__unlimit img {
+    min-width: 230px;
+  }
+
+  @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .shares__unlimit p {
+      width: 140px;
+    }
   }
 }
 

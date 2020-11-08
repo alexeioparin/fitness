@@ -22,6 +22,12 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .main-body {
+    background-image: url("../img/background/back-desktop.png");
+  }
+}
+
 @media (max-width: $mid-size) {
   .main-body {
     background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -37,6 +43,12 @@
   }
 
   @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .main-body {
+      background-image: url("../img/background/back-tablet.png");
+    }
+  }
+
+  @-moz-document url-prefix() {
     .main-body {
       background-image: url("../img/background/back-tablet.png");
     }
@@ -58,6 +70,12 @@
   }
 
   @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .main-body {
+      background-image: url("../img/background/back-mobile.png");
+    }
+  }
+
+  @-moz-document url-prefix() {
     .main-body {
       background-image: url("../img/background/back-mobile.png");
     }
