@@ -143,7 +143,7 @@
       font-size: 40px;
       line-height: 40px;
       margin: 0 auto;
-      margin-bottom: 43px;
+      margin-bottom: 45px;
     }
   }
 
@@ -190,6 +190,7 @@
 
 @media (max-width: $min-size) {
   .trainers {
+    padding-top: 40px;
     padding-bottom: 70px;
 
     h2 {
@@ -217,6 +218,7 @@
 
   .trainers__mask {
     width: 78%;
+    margin-left: 0;
   }
 
   .trainers__slider {

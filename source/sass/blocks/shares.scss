@@ -66,7 +66,6 @@
     line-height: 140%;
     color: #ffffff;
     text-align: left;
-    width: 190px;
   }
 
   a {
@@ -128,6 +127,12 @@
   }
 }
 
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .shares__unlimit p {
+    width: 190px;
+  }
+}
+
 @media (max-width: 1310px) {
   .shares__unlimit img {
     min-width: 230px;
@@ -142,7 +147,7 @@
 
 @media (max-width: $mid-size) {
   .shares {
-    padding: 96px 0 94px;
+    padding: 96px 0 60px;
 
     h2 {
       font-size: 42px;
@@ -168,7 +173,7 @@
   }
 
   .shares__unlimit {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .shares__other {
@@ -176,6 +181,10 @@
 
     div {
       width: 47.8%;
+    }
+
+    div:first-child {
+      margin-bottom: 0;
     }
 
     p {
@@ -240,6 +249,10 @@
       margin-bottom: 30px;
       align-items: center;
       padding: 37px 27px 39px;
+    }
+
+    div:first-child {
+      margin-bottom: 30px;
     }
 
     p {

@@ -48,6 +48,11 @@
       font-size: 24px;
       line-height: 24px;
       letter-spacing: 0.02em;
+      margin-top: 0;
+    }
+
+    > a:first-child {
+      margin-bottom: 5px;
     }
   }
 }

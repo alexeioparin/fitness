@@ -215,9 +215,9 @@
   }
 
   .abonements__wrapper h2 {
-    font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 22px;
   }
 
   .abonements::after {
@@ -225,7 +225,7 @@
     background-image: url("../img/content/weight-tablet.png");
     background-size: 100%;
     right: 0;
-    bottom: -125px;
+    bottom: -123px;
     width: 347px;
     height: 444px;
   }
@@ -248,7 +248,7 @@
     width: 442px;
     padding: 62px 118px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     min-height: 447px;
 
     p::before {
@@ -274,7 +274,7 @@
       background-image: url("../img/content/weight-tablet@2x.png");
       background-size: 100%;
       right: 0;
-      bottom: -125px;
+      bottom: -123px;
       width: 347px;
       height: 444px;
     }
@@ -283,7 +283,7 @@
 
 @media (max-width: $min-size) {
   .abonements {
-    padding: 70px 0 33px;
+    padding: 71px 0 33px;
   }
 
   .abonements::after {
@@ -293,7 +293,8 @@
   .abonements__wrapper h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 0.033em;
   }
 
   .abonements__wrapper::after {

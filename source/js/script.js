@@ -42,13 +42,10 @@ trainerNextButton.addEventListener('click', shiftRight);
 
 trainersSlider.addEventListener('pointerdown', function(evtStart) {
   evtStart.preventDefault();
-  console.log(1);
   let startCoords = evtStart.clientX;
-  console.log(startCoords);
 
   let onMouseUp = function(evtEnd) {
     let endCoords = evtEnd.clientX;
-    console.log(endCoords);
     if (startCoords < endCoords + 20) {
       shiftLeft();
     } else if (startCoords > endCoords - 20) {
