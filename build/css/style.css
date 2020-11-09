@@ -158,7 +158,7 @@ img {
   .main-body {
     background-image: url("../img/background/back-desktop.png"); } }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .main-body {
     background-image: url("../img/background/back-desktop.png"); } }
 
@@ -179,7 +179,7 @@ img {
     background-image: url("../img/background/back-tablet.png"); } }
 
 @media (max-width: 1199px) {
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .main-body {
       background-image: url("../img/background/back-tablet.png"); } } }
 
@@ -200,7 +200,7 @@ img {
     background-image: url("../img/background/back-mobile.png"); } }
 
 @media (max-width: 767px) {
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .main-body {
       background-image: url("../img/background/back-mobile.png"); } } }
 

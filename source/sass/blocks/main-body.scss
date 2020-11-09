@@ -22,7 +22,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .main-body {
     background-image: url("../img/background/back-desktop.png");
   }
@@ -48,7 +48,7 @@
     }
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .main-body {
       background-image: url("../img/background/back-tablet.png");
     }
@@ -75,7 +75,7 @@
     }
   }
 
-  @-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .main-body {
       background-image: url("../img/background/back-mobile.png");
     }
