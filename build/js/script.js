@@ -28,7 +28,6 @@ let shiftRight = function() {
   }
 }
 
-
 abonMenu.addEventListener('click', function(evt) {
   for (let i = 0; i < abonMenuItems.length; i++) {
     abonMenuItems[i].classList.remove('abonements__active-item');
@@ -40,21 +39,34 @@ trainerPrevButton.addEventListener('click', shiftLeft);
 
 trainerNextButton.addEventListener('click', shiftRight);
 
-trainersSlider.addEventListener('pointerdown', function(evtStart) {
-  evtStart.preventDefault();
-  let startCoords = evtStart.clientX;
+//
 
-  let onMouseUp = function(evtEnd) {
-    let endCoords = evtEnd.clientX;
-    if (startCoords < endCoords + 20) {
+let initialPointTrainer;
+let finalPointTrainer;
+
+trainersSlider.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  initialPointTrainer = evt.changedTouches[0];
+}, false);
+
+trainersSlider.addEventListener('touchend', function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  finalPointTrainer = evt.changedTouches[0];
+  let xAbs = Math.abs(initialPointTrainer.pageX - finalPointTrainer.pageX);
+
+  if (xAbs > 20) {
+    if (finalPointTrainer.pageX > initialPointTrainer.pageX) {
       shiftLeft();
-    } else if (startCoords > endCoords - 20) {
+    } else {
       shiftRight();
     }
-    trainersSlider.removeEventListener('pointerup', onMouseUp);
   }
-  trainersSlider.addEventListener('pointerup', onMouseUp);
-})
+}, false);
+
+//
+
 
 let shiftFeedbackLeft = function() {
   if (feedbackCurrentShift < 0) {
@@ -74,17 +86,26 @@ feedbackPrevButton.addEventListener('click', shiftFeedbackLeft);
 
 feedbackNextButton.addEventListener('click', shiftFeedbackRight);
 
-feedbackSlider.addEventListener('pointerdown', function(evtStart) {
-  evtStart.preventDefault();
-  let startCoords = evtStart.clientX;
-  let onMouseUp = function(evtEnd) {
-    let endCoords = evtEnd.clientX;
-    if (startCoords < endCoords + 50) {
+let initialPointFeedback;
+let finalPointFeedback;
+
+feedbackSlider.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  initialPointFeedback = evt.changedTouches[0];
+}, false);
+
+feedbackSlider.addEventListener('touchend', function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  finalPointFeedback = evt.changedTouches[0];
+  let xAbs = Math.abs(initialPointFeedback.pageX - finalPointFeedback.pageX);
+
+  if (xAbs > 20) {
+    if (finalPointFeedback.pageX > initialPointFeedback.pageX) {
       shiftFeedbackLeft();
-    } else if (startCoords > endCoords - 50) {
+    } else {
       shiftFeedbackRight();
     }
-    feedbackSlider.removeEventListener('pointerup', onMouseUp);
   }
-  feedbackSlider.addEventListener('pointerup', onMouseUp);
-})
+}, false);

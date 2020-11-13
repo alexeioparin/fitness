@@ -1173,7 +1173,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 800px;
+    max-width: 679px;
     margin: 0 auto; }
     .trainers__block svg {
       position: relative;
@@ -1181,9 +1181,9 @@ img {
               transform: translateY(0); }
   .trainers__mask {
     width: 87.8%;
-    margin-left: calc(50% - 312px); }
+    margin-left: calc(40% - 246px); }
   .trainers__slider {
-    min-width: 395.5%; }
+    min-width: 395%; }
   .trainers__card {
     width: 268px;
     margin-right: 0; }

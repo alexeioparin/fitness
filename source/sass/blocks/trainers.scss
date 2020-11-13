@@ -155,7 +155,7 @@
 
   .trainers__block {
     align-items: center;
-    max-width: 800px;
+    max-width: 679px;
     margin: 0 auto;
 
     svg {
@@ -166,12 +166,11 @@
 
   .trainers__mask {
     width: 87.8%;
-    // margin-left: 4%;
-    margin-left: calc(50% - 312px);
+    margin-left: calc(40% - 246px);
   }
 
   .trainers__slider {
-    min-width: 395.5%;
+    min-width: 395%;
   }
 
   .trainers__card {
