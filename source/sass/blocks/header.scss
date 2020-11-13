@@ -1,11 +1,12 @@
 
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: wrap;
   min-height: 50px;
   padding: 0 5px;
+  position: relative;
 
   a {
     font-family: "Bebas Neue", "Open Sans", sans-serif;
@@ -17,14 +18,22 @@
     margin-top: 10px;
   }
 
-  a:last-child:hover {
+  a:hover {
     opacity: 0.5;
   }
 
+  > a:hover {
+    opacity: 1;
+  }
+
   div {
+    position: absolute;
+    right: 5px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 2;
   }
 }
 
@@ -38,6 +47,7 @@
   .header__wrapper {
     min-height: 63px;
     padding: 0;
+    justify-content: space-between;
 
     img {
       width: 82px;
@@ -53,6 +63,10 @@
 
     > a:first-child {
       margin-bottom: 5px;
+    }
+
+    div {
+      position: static;
     }
   }
 }

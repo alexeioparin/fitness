@@ -264,6 +264,10 @@
     }
   }
 
+  .abonements__card:hover {
+    padding: 55px 113px;
+  }
+
   .abonements__card--active {
     background-color: #f8f9fc;
   }
@@ -339,6 +343,14 @@
       font-size: 80px;
       top: -43px;
       left: -5px;
+    }
+  }
+
+  .abonements__card:hover {
+    padding: 40px 37px;
+
+    p::before {
+      left: -7px;
     }
   }
 

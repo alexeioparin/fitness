@@ -40,7 +40,7 @@ trainerPrevButton.addEventListener('click', shiftLeft);
 
 trainerNextButton.addEventListener('click', shiftRight);
 
-trainersSlider.addEventListener('pointerdown', function(evtStart) {
+trainersSlider.addEventListener('touchstart', function(evtStart) {
   evtStart.preventDefault();
   let startCoords = evtStart.clientX;
 
@@ -51,9 +51,9 @@ trainersSlider.addEventListener('pointerdown', function(evtStart) {
     } else if (startCoords > endCoords - 20) {
       shiftRight();
     }
-    trainersSlider.removeEventListener('pointerup', onMouseUp);
+    trainersSlider.removeEventListener('touchend', onMouseUp);
   }
-  trainersSlider.addEventListener('pointerup', onMouseUp);
+  trainersSlider.addEventListener('touchend', onMouseUp);
 })
 
 let shiftFeedbackLeft = function() {

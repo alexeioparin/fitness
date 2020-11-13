@@ -1,7 +1,7 @@
 .trainers {
   background-color: #ffffff;
-  padding-top: 60px;
-  padding-bottom: 123px;
+  padding-top: 100px;
+  padding-bottom: 123px; //123
   box-sizing: border-box;
   display: flex;
 
@@ -144,6 +144,8 @@
       line-height: 40px;
       margin: 0 auto;
       margin-bottom: 45px;
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -153,6 +155,8 @@
 
   .trainers__block {
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 
     svg {
       position: relative;
@@ -162,7 +166,8 @@
 
   .trainers__mask {
     width: 87.8%;
-    margin-left: 27px;
+    // margin-left: 4%;
+    margin-left: calc(50% - 312px);
   }
 
   .trainers__slider {
