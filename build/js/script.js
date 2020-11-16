@@ -39,8 +39,6 @@ trainerPrevButton.addEventListener('click', shiftLeft);
 
 trainerNextButton.addEventListener('click', shiftRight);
 
-//
-
 let initialPointTrainer;
 let finalPointTrainer;
 
@@ -64,9 +62,6 @@ trainersSlider.addEventListener('touchend', function(evt) {
     }
   }
 }, false);
-
-//
-
 
 let shiftFeedbackLeft = function() {
   if (feedbackCurrentShift < 0) {

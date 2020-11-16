@@ -151,10 +151,10 @@ img {
 
 .main-body {
   background-color: #b80027;
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #b80027), color-stop(50%, #ffffff));
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), linear-gradient(180deg, #b80027 50%, #ffffff 50%);
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), -webkit-gradient(linear, left top, left bottom, color-stop(25%, #b80027), color-stop(25%, #ffffff));
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), linear-gradient(180deg, #b80027 25%, #ffffff 25%);
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% 658px, 100% 4658px; }
+  background-size: 100% 658px, 100% 100%; }
 
 .main-body::after {
   content: "";
