@@ -30,9 +30,9 @@
 
 @media (max-width: $mid-size) {
   .main-body {
-    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-    background-repeat: no-repeat;
-    background-size: 100% 554px;
+    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), linear-gradient(180deg, #b80027 20%, #ffffff 20%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 554px, 100% 100%;
   }
 
   .main-body::after {
@@ -57,9 +57,9 @@
 
 @media (max-width: $min-size) {
   .main-body {
-    background-image: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-    background-repeat: no-repeat;
-    background-size: 100% 491px;
+    background-image: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg), linear-gradient(180deg, #b80027 20%, #ffffff 20%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 491px, 100% 100%;
   }
 
   .main-body::after {
